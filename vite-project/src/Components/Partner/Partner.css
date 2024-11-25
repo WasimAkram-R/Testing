@@ -1,0 +1,139 @@
+/* .partnerform .partnerinput::placeholder{
+    font-size: 12px;
+}
+
+ .partnerform .partnerinput:focus{
+   outline:none;
+} 
+
+.partnerform .partnertextarea::placeholder{
+    padding-left: 5px;
+    padding-top: 5px;
+}  */
+
+
+
+
+
+/* For larger screens (min-width: 768px) */
+@media (min-width: 768px) {
+    .overlaydiv {
+      height: 450px; 
+      position: relative;
+      width: 100%;
+      overflow: hidden; 
+    }
+  
+    .overlaydiv::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7); /* Dark overlay with 80% opacity */
+      z-index: 1; /* Position overlay above the image */
+    }
+  
+    .overlaydiv img {
+      width: 100%;
+      height: 100%; 
+    }
+    .overlaydiv .content{
+        text-align: center;
+    }
+    .content h1{
+        font-size: 40px;
+    }
+  }
+  
+  /* For smaller screens (max-width: 767px) */
+  @media (max-width: 767px) {
+    .overlaydiv {
+     
+      position: relative;
+    }
+
+    .overlayimg{
+      height: 350px !important;
+    }
+  
+    .overlaydiv::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1; 
+    }
+  
+    .overlaydiv img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+    }
+    .content{
+        text-align: center;
+    }
+    .content h1{
+        font-size: 25px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+  }
+  
+  /* Content inside the overlay - Vertically centered */
+  .overlaydiv .content {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 0; /* Align content to the left */
+    transform: translateY(-50%); /* Adjust positioning to ensure perfect vertical centering */
+    color: white; /* Set content text color */
+
+    z-index: 2; /* Ensure content is above the overlay */
+  }
+  
+  
+  body, .container-fluid, .overlaydiv {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  }
+  .overlaydiv {
+    position: relative;
+    overflow: hidden; /* Hide any potential horizontal overflow */
+  }
+
+  /* .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(10px);
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+.glass-effect p {
+    color: white; 
+}
+
+.glass-effect .col-md-4, .glass-effect .col-10 {
+    background: rgba(255, 255, 255, 0.2);
+} */
+
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(8px); 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+.glass-effect:hover {
+    transform: scale(1.05); 
+    transition: 0.5s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+

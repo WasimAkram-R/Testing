@@ -1,0 +1,63 @@
+.tailorsform .tailorsinput::placeholder{
+    font-size: 12px;
+}
+
+.tailorsform .tailorsinput:focus{
+   border: none;
+   outline: none;
+}
+
+.tailorsform .tailorstextarea::placeholder{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+
+
+
+/* Wrapper for image and overlay text */
+.img-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .img-wrapper img {
+    width: 100%;
+    height: 350px;  /* Adjust as needed */
+    object-fit: cover;  /* Ensures image fully covers the area */
+    display: block;  /* Ensures image is displayed properly */
+  }
+  
+  /* Overlay with rgba color behind the text */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent black overlay */
+    z-index: 1;  /* This ensures the overlay is behind the text */
+  }
+  
+  /* Text wrapper centered vertically but aligned from the left */
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;  /* Start from the left */
+    transform: translateY(-50%);  /* Vertically center the text */
+    color: white;
+    text-align: left;  /* Align the text to the left */
+    padding-left: 20px; /* Optional: Add some padding from the left */
+    z-index: 2;  /* This ensures the text stays on top of the overlay */
+  }
+  
+  .text-overlay h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .text-overlay p {
+    font-size: 1rem;
+  }
+  

@@ -1,0 +1,27 @@
+.a{
+    position: relative;
+}
+.a::after{
+    width: 0;
+    content: "";
+    height: 3px;
+    background-color:#ff7b7b;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.6s linear;
+}
+.a:hover::after{
+    width: 100%;
+}
+
+
+.icons-container {
+    width: 40px;  
+    height: 35px; 
+    border: 1px solid white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+  }
