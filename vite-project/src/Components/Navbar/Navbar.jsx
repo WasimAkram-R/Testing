@@ -67,7 +67,7 @@ const ResponsiveNavbar = () => {
             {/* <Button variant="outline-primary" href="#login" className="me-2">
               Login
             </Button> */}
-            <div className=''>
+            <div className='d-flex justify-content-center align-items-center'>
             <IoLogInOutline className='' style={{width:"30px",height:"30px",color:"#ff7b7b"}} />
             <span className='' style={{color:"white"}}>Login</span>
             </div>

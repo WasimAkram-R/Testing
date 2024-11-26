@@ -34,6 +34,9 @@ import { TbBusinessplan } from "react-icons/tb";
 
 import AOS from 'aos';
 
+import Carousel from 'react-bootstrap/Carousel';
+
+
 const Home = () => {
   const [location, setLocation] = useState('');  // State to hold location input
   const navigate = useNavigate();  // Hook to programmatically navigate
@@ -59,6 +62,9 @@ const Home = () => {
   useEffect(()=>{
      AOS.refresh();
   },[]);
+
+
+
 
   return (
     <>
@@ -102,13 +108,13 @@ const Home = () => {
         <input  
           type="text" 
           placeholder="Enter Location" 
-          className="w-50 form-control bg-transparent border-2 forms" 
+          className="w-50 form-control bg-transparent  homeform" 
           value={location}
           onChange={handleLocationChange} 
         />
         <button 
           onClick={handleSearch}  // Trigger search and navigate
-          className="border-0  px-sm-4 py-sm-2 px-3 py-1 rounded-5 text-white fw-light" style={{backgroundColor:"#ff7b7b"}}
+          className=" px-sm-4 py-sm-2 px-3 py-1 rounded-5 text-white fw-light homebutton text-uppercase" style={{backgroundColor:"transparent"}}
         >
           Search
         </button>
@@ -128,9 +134,9 @@ const Home = () => {
 
    
      
-<div className="container-fluid py-5">
+<div className="container-fluid py-lg-5 py-4">
     <div className="container">
-        <div className="row justify-content-around row-gap-5 ">
+        <div className="row justify-content-around  row-gap-lg-5 row-gap-4 ">
             <div className="text-center">
                 <h2 className="display-6" style={{color:"#ff7b7b"}}>Tailor-Made Connections, Seamlessly</h2>
             </div>
@@ -155,9 +161,9 @@ const Home = () => {
     </div>
 </div>
 
-<div className="container-fluid py-5">
+<div className="container-fluid ">
     <div className="container">
-        <div className="row justify-content-around row-gap-5 ">
+        <div className="row justify-content-around row-gap-lg-5 row-gap-4">
             <div className="text-center">
                 <h2 className=" display-6" style={{color:"#ff7b7b"}}>Who We Are</h2>
             </div>
@@ -182,13 +188,13 @@ const Home = () => {
 
 
 
-<div className="container-fluid py-5">
+<div className="container-fluid pt-lg-5 pt-4">
   <div className="container">
-     <div className="row justify-content-around row-gap-5" >
+     <div className="row justify-content-around  row-gap-lg-5 row-gap-4" >
      <div className="text-center">
                 <h2 className=" display-6" style={{color:"#ff7b7b"}}>How It Works</h2>
             </div>
-      <div className="col-lg-5" data-aos="fade-up">
+      <div className="col-lg-5" data-aos="fade-right">
       <h5 className='pb-2' style={{color:"#ff7b7b"}}>Steps for Customers:</h5>
                 <ul className='list-unstyled'>
                     <li className='' ><span className="fw-medium text-white">< IoSearch  style={{color:"#ff7b7b"}}  /> Search for Tailors:</span> <span className=""style={{color:"#c4c4c5"}}>Filter by location, specialty, or ratings.</span></li>
@@ -196,7 +202,7 @@ const Home = () => {
                     <li><span className="fw-medium text-white"><GiClothes  style={{color:"#ff7b7b"}} /> Get Your Fit:</span> <span className=""style={{color:"#c4c4c5"}}> Receive high-quality, custom-made clothing.</span></li>
                 </ul>
       </div>
-      <div className="col-lg-5" data-aos="fade-up">
+      <div className="col-lg-5" data-aos="fade-left">
       <marquee behavior="" direction="">
                   <img src={icon1} alt="" />
                   <IoMdArrowForward size={30}style={{color:"#ff7b7b"}}/>
@@ -212,10 +218,10 @@ const Home = () => {
 </div>
 
     
-<div className="container-fluid py-5">
+<div className="container-fluid py-lg-5">
   <div className="container" >
-     <div className="row justify-content-around row-gap-5"  >
-      <div className="col-lg-5 order-lg-first order-last" data-aos="fade-up">
+     <div className="row justify-content-around row-gap-lg-5 row-gap-4"  >
+      <div className="col-lg-5 order-lg-first order-last" data-aos="fade-right">
       <marquee behavior="" direction="">
                   <img src={icon1} alt="" />
                   <IoMdArrowForward size={30}style={{color:"#ff7b7b"}}/>
@@ -228,7 +234,7 @@ const Home = () => {
                   <img src={icon1} alt="" />
                 </marquee>
       </div>
-      <div className="col-lg-5" data-aos="fade-up" >
+      <div className="col-lg-5" data-aos="fade-left" >
       <h5 className='pb-2 'style={{color:"#ff7b7b"}}>Steps for Tailors:</h5>
                 <ul className='list-unstyled'>
                     <li className=""><span className='fw-medium text-white'><CgProfile  style={{color:"#ff7b7b"}}  /> Create Your Profile: </span><span className=""style={{color:"#c4c4c5"}}>Showcase your skills, services, and portfolio.</span></li>
@@ -239,6 +245,15 @@ const Home = () => {
      </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
     
 
 

@@ -1,11 +1,4 @@
-/* .footerform .footerinput::placeholder{
-    font-size: 12px;
-    padding-left: 10px;
-    color: black;
-}
-.footerform .footerinput:focus{
-    outline: none;
-} */
+
 
 
 .uppercontainer{
@@ -55,14 +48,21 @@ html {
 .footerform .footerinput::placeholder{
     color:#c4c4c5;
 }
+.footerform .footerinput{
+    color: white;
+  }
+  
 
-
+.footerinput:focus {
+    outline: none !important;  /* Removes the outline */
+    box-shadow: none !important; /* Removes the box-shadow */
+  }
 
 
 .icon-container {
     width: 40px;  
     height: 40px; 
-    border: 1px solid white; 
+    border: 1px solid #ff7b7b; 
     display: flex;
     justify-content: center;
     align-items: center;

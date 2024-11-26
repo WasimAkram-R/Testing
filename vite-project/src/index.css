@@ -18,3 +18,37 @@
     /* background-color: #F7F7F7 !important; */
     background-color: #0f0e15 !important;
 } 
+
+
+.formsform .formsinput{
+  background-color: #151515;
+  border: 1px solid gray;
+}
+.formsform .formsinput:focus{
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+}
+.formsform .formsinput::placeholder{
+  color:#c4c4c5;
+}
+.formsform .formsinput{
+  color: white;
+}
+
+
+.formsbutton{
+  border: 1px solid #ff7b7b !important;
+  color: white;
+  background-color: #ff7b7b;
+}
+.formsbutton:hover{
+background-color: #ff7b7b !important;
+transition: 0.5s !important;
+}
+
+
+.formsinput:focus {
+  outline: none !important;  /* Removes the outline */
+  box-shadow: none !important; /* Removes the box-shadow */
+}

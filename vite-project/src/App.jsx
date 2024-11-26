@@ -42,7 +42,7 @@ function App() {
 
     <div className="container-fluid uppercontainer" id="scrollTarget"  style={{backgroundColor:"#151515"}}>
         <div className="container">
-           <div className="row pt-4 row-gap-5">
+           <div className="row py-4 row-gap-5">
              <div className="col-md-6">
              {/* <div className='text-white d-flex gap-3'>
              <FaFacebook    style={{width:"30px",height:"40px",color:""}} />

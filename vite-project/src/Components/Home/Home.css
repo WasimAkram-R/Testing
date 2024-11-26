@@ -15,12 +15,29 @@
     background-color: rgba(0, 0, 0, 0.6);
   }
   
-  .forms::placeholder{
+  .homeform::placeholder{
     color: white !important;
   }
-  .forms:focus{
-    color: white !important;
+  .homeform:focus{
+    outline: none !important;  
+    box-shadow: none !important;
+    border: 1px solid white !important;
   }
+  .homeform{
+    color: white !important;
+    border: 1px solid white !important;
+  }
+
+  .homebutton{
+    border: 1px solid #ff7b7b !important;
+    color: white;
+    background-color: #ff7b7b;
+  }
+  .homebutton:hover{
+  background-color: #ff7b7b !important;
+  transition: 0.5s !important;
+  }
+
 @media (max-width:1399px) and (min-width:1200px){
     .tailorsh1{
          font-size: 60px;
@@ -87,3 +104,10 @@
         height: 300px !important;
     }
 }
+
+
+
+
+
+/* cau */
+
