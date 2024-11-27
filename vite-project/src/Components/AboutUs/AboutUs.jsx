@@ -34,7 +34,7 @@ const AboutUs = () => {
 
 
    
-        <div className="container py-lg-5 py-md-3">
+        <div className="container py-lg-5 py-3">
             
           <div className="row  row-gap-md-5  row-gap-4">
           <div className="col-lg-6 order-lg-first order-last"data-aos="fade-right">

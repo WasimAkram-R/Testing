@@ -64,7 +64,7 @@ const Partners = () => {
    
       <Swiper
        data-aos="fade-up"
-        className='pt-md-5 pt-4'
+        className='pt-md-5 pt-3'
         spaceBetween={20}
         loop={true}
         autoplay={{
@@ -137,7 +137,7 @@ const Partners = () => {
       </Swiper> 
 
 
-  <div className="container py-md-5 py-4">
+  <div className="container py-md-5 py-3">
 
     {/* About TailorsHub Section */}
     <div className="row row-gap-md-5 row-gap-4">
@@ -158,7 +158,7 @@ const Partners = () => {
     
 
    
-    <div className="container py-lg-5 py-md-3">
+    <div className="container py-lg-5 py-3">
     {/* Benefits for Tailors Section */}
     <div className="row row-gap-md-5 row-gap-4 ">
       <div className="col-lg-6 order-lg-first order-last"data-aos="fade-right">
@@ -203,7 +203,7 @@ const Partners = () => {
 
 
    
-    <div className="container py-lg-5 py-md-3">
+    <div className="container py-lg-5 py-3">
 
     {/* How It Works Section */}
     <div className="row row-gap-md-5 row-gap-4 ">

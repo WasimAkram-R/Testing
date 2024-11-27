@@ -41,7 +41,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade'; 
-import { RiDoubleQuotesR } from "react-icons/ri";
+import { FaQuoteLeft } from "react-icons/fa6";
+import { FaQuoteRight } from "react-icons/fa6";
 
 
 
@@ -172,7 +173,7 @@ const Home = () => {
 
 
 
-    <div className="container py-lg-5 py-md-3">
+    <div className="container py-lg-5 py-3">
         <div className="row row-gap-md-5 row-gap-4">
             <div className="text-center">
                 <h3 className=" displaytext text-uppercase" style={{color:"#ff7b7b"}}>Who We Are</h3>
@@ -294,20 +295,17 @@ const Home = () => {
         <SwiperSlide className=' p-4' style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
           <div className="testimonial">
           
-            <p className="testimonial-text displaypara" style={{color:"#c4c4c5"}}>
-             The tailor was extremely professional, and I could see their dedication to perfecting every detail. The quality of my custom suit exceeded all expectations. 
+            <p className="testimonial-text displaypara" style={{color:"#c4c4c5"}}><FaQuoteLeft size={35}  style={{color:"#ff7b7b"}}/>  The tailor was extremely professional,I could see their dedication to perfecting every detail. The quality of my custom suit exceeded all expectations. <FaQuoteRight size={35}  style={{color:"#ff7b7b"}}/>
             </p>
             
 
 
             <div className="row align-items-end">
-              <div className="col-8">
+              <div className="col">
               <h4 className="testimonial-name text-white">Customer 1</h4>
               <h6 className="testimonial-name" style={{color:"#ff7b7b"}}>client</h6>
               </div>
-              <div className="col-4">
-              <RiDoubleQuotesR size={80}  style={{color:"#ff7b7b"}}/>
-              </div>
+
             </div>
 
           </div>
@@ -319,18 +317,14 @@ const Home = () => {
         <SwiperSlide className='p-4' style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
           <div className="testimonial">
          
-            <p style={{color:"#c4c4c5"}}className="testimonial-text displaypara">
-              The best experience I’ve had with custom clothing. The attention to detail and the fit were perfect. I feel so confident every time I wear my new suit. Highly recommend!
+            <p style={{color:"#c4c4c5"}}className="testimonial-text displaypara"><FaQuoteLeft size={35}  style={{color:"#ff7b7b"}}/> The best experience I’ve had with custom clothing. The attention to detail and the fit were perfect. I feel so confident every time I wear my new suit. Highly recommend! <FaQuoteRight size={35}  style={{color:"#ff7b7b"}}/>
             </p>
             
          
             <div className="row align-items-end">
-              <div className="col-8">
+              <div className="col">
               <h4 className="testimonial-name text-white">Customer 2</h4>
               <h6 className="testimonial-name" style={{color:"#ff7b7b"}}>client</h6>
-              </div>
-              <div className="col-4">
-              <RiDoubleQuotesR size={80}  style={{color:"#ff7b7b"}}/>
               </div>
             </div>
 
@@ -342,19 +336,16 @@ const Home = () => {
         <SwiperSlide className=' p-4' style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
           <div className="testimonial">
    
-            <p style={{color:"#c4c4c5"}}className="testimonial-text displaypara">
-            I’ve always struggled with finding clothes that fit me properly, but after connecting with a tailor, everything changed. The tailor was so patient, taking time to understand my preferences and suggesting the best style for my body.
+            <p style={{color:"#c4c4c5"}}className="testimonial-text displaypara"><FaQuoteLeft size={35}  style={{color:"#ff7b7b"}}/> I’ve always struggled with finding clothes that fit me properly, but after connecting with a tailor, everything changed. The tailor was so patient, taking time to understand my preferences and suggesting the best style for my body.  <FaQuoteRight size={35}  style={{color:"#ff7b7b"}}/>
             </p>
             
           
             <div className="row align-items-end">
-              <div className="col-8">
+              <div className="col">
               <h4 className="testimonial-name text-white">Customer 3</h4>
               <h6 className="testimonial-name" style={{color:"#ff7b7b"}}>client</h6>
               </div>
-              <div className="col-4">
-              <RiDoubleQuotesR size={80}  style={{color:"#ff7b7b"}}/>
-              </div>
+         
             </div>
 
 
@@ -365,19 +356,16 @@ const Home = () => {
         <SwiperSlide className='p-4' style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
           <div className="testimonial">
     
-            <p style={{color:"#c4c4c5"}}className="testimonial-text displaypara">
-            I’ve been looking for a reliable tailor for years, and I finally found one! The process was simple, and the tailor took the time to understand my specific measurements and preferences. 
+            <p style={{color:"#c4c4c5"}}className="testimonial-text displaypara"><FaQuoteLeft size={35}  style={{color:"#ff7b7b"}}/> I’ve been looking for a reliable tailor for years, and I finally found one! The process was simple, and the tailor took the time to understand my specific measurements and preferences. <FaQuoteRight size={35}  style={{color:"#ff7b7b"}}/> 
             </p>
            
           
             <div className="row align-items-end">
-              <div className="col-8">
+              <div className="col">
               <h4 className="testimonial-name text-white">Customer 4</h4>
               <h6 className="testimonial-name" style={{color:"#ff7b7b"}}>client</h6>
               </div>
-              <div className="col-4">
-              <RiDoubleQuotesR size={80}  style={{color:"#ff7b7b"}}/>
-              </div>
+     
             </div>
 
 
