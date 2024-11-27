@@ -40,7 +40,7 @@ function App() {
       </Routes>
     </BrowserRouter>
 
-    <div className="container-fluid uppercontainer" id="scrollTarget"  style={{backgroundColor:"#151515"}}>
+    <div className="container-fluid uppercontainer " id="scrollTarget"  style={{backgroundColor:"#151515"}}>
         <div className="container">
            <div className="row py-4 row-gap-5">
              <div className="col-md-6">
