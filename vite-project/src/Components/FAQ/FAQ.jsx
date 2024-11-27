@@ -12,13 +12,13 @@ const FAQ = () => {
     <>
 
   
-<div className="container-fluid py-lg-5 py-4"  >
+<div className="container-fluid py-md-5 py-4"  >
      <div className="container">
 
-<h1 className='' style={{color:"#ff7b7b"}}>FAQ</h1>
+<h1 className='displaytext' style={{color:"#ff7b7b"}}>FAQ</h1>
 
 
-<h3 className='pt-lg-5 pt-4 pb-3 text-white'>For Customers</h3>
+<h3 className='pt-md-5 pt-4 pb-3 text-white text-uppercase '>For Customers</h3> 
 
 
 <Accordion data-aos="fade-right" >
@@ -65,7 +65,7 @@ expertise. You can request quotes from multiple tailors to compare prices.
 
 
 
-<h3 className='pt-lg-5 pt-4 pb-3 text-white'>For Tailors</h3>
+<h3 className='pt-md-5 pt-4 pb-3 text-white text-uppercase '>For Tailors</h3>
 
 
 

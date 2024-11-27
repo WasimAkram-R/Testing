@@ -52,3 +52,13 @@ transition: 0.5s !important;
   outline: none !important;  /* Removes the outline */
   box-shadow: none !important; /* Removes the box-shadow */
 }
+
+@media (min-width:1200px){
+  .displaytext{
+    font-size:35px;
+ 
+  }
+  .displaypara{
+    font-size: 18px;
+  }
+}

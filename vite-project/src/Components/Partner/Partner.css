@@ -1,21 +1,6 @@
-/* .partnerform .partnerinput::placeholder{
-    font-size: 12px;
-}
-
- .partnerform .partnerinput:focus{
-   outline:none;
-} 
-
-.partnerform .partnertextarea::placeholder{
-    padding-left: 5px;
-    padding-top: 5px;
-}  */
 
 
-
-
-
-/* For larger screens (min-width: 768px) */
+/* 
 @media (min-width: 768px) {
     .overlaydiv {
       height: 450px; 
@@ -31,8 +16,8 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.7); /* Dark overlay with 80% opacity */
-      z-index: 1; /* Position overlay above the image */
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1; 
     }
   
     .overlaydiv img {
@@ -46,8 +31,7 @@
         font-size: 40px;
     }
   }
-  
-  /* For smaller screens (max-width: 767px) */
+
   @media (max-width: 767px) {
     .overlaydiv {
      
@@ -85,25 +69,24 @@
     }
   }
   
-  /* Content inside the overlay - Vertically centered */
+
   .overlaydiv .content {
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 0; /* Align content to the left */
-    transform: translateY(-50%); /* Adjust positioning to ensure perfect vertical centering */
-    color: white; /* Set content text color */
-
-    z-index: 2; /* Ensure content is above the overlay */
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: white; 
+    z-index: 2;
   }
   
   
   body, .container-fluid, .overlaydiv {
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden; 
   }
   .overlaydiv {
     position: relative;
-    overflow: hidden; /* Hide any potential horizontal overflow */
-  }
+    overflow: hidden; 
+  } */
 
   /* .glass-effect {
     background: rgba(255, 255, 255, 0.1);
@@ -122,7 +105,7 @@
 } */
 
 
-.glass-effect {
+/* .glass-effect {
     background: rgba(255, 255, 255, 0.3); 
     backdrop-filter: blur(8px); 
     border-radius: 8px;
@@ -134,6 +117,28 @@
     transform: scale(1.05); 
     transition: 0.5s;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+} */
+
+
+@media (min-width:1200px){
+  .partnertext{
+    font-size: 65px;
+ 
+  }
 }
+
+@media (min-width:768px) and (max-width:1200px) {
+  .partnertext{ 
+    font-size: 50px;
+
+  }
+}
+@media (max-width:767px){
+  .partnertext{
+
+    font-size: 35px;
+  }
+}
+
 
 
