@@ -148,8 +148,8 @@ const Home = () => {
     <div className="container py-md-5 py-4">
         <div className="row  row-gap-md-5 row-gap-4 ">
             <div className="text-center">
-                <h3 className="displaytext 
-                text-uppercase" style={{color:"#ff7b7b"}}>Tailor-Made Connections, Seamlessly</h3>
+                <h4 className="displaytext 
+                text-uppercase" style={{color:"#ff7b7b"}}>Tailor-Made Connections, Seamlessly</h4>
             </div>
 
             <div className="col-lg-6" data-aos="fade-right" >

@@ -20,7 +20,7 @@ const ResponsiveNavbar = () => {
       <Container>
         {/* Logo/Brand on the left */}
         <Navbar.Brand className='text-white'>
-          <span  className='fw-medium' style={{fontSize:"30px",fontFamily:"cursive"}}>Tailors<span style={{color:"#ff7b7b"}}>Hub</span></span>
+          <span  className='fw-medium' style={{fontSize:"30px",fontFamily:"cursive"}}>Tailors<span style={{color:"#ff7b7b",fontFamily:"cursive"}}>Hub</span></span>
         </Navbar.Brand>
 
         {/* Center Navigation Links */}
