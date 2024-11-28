@@ -24,6 +24,12 @@ import Heroimage7 from './HeroImages/Hero_Image7.png';
 import Heroimage8 from './HeroImages/Hero_Image8.png';
 import Heroimage9 from './HeroImages/Hero_Image9.png';
 import icon1 from './HeroImages/icon1.png';
+import icon2 from './HeroImages/icon2.png';
+import icon3 from './HeroImages/icon3.png';
+import icon4 from './HeroImages/icon4.png';
+import icon5 from './HeroImages/icon5.png';
+import icon6 from './HeroImages/icon6.png';
+import icon7 from './HeroImages/icon7.png';
 
 import { IoSearch } from "react-icons/io5";
 import { MdConnectWithoutContact } from "react-icons/md";
@@ -213,15 +219,15 @@ const Home = () => {
                     <li><span className="fw-medium text-white"><GiClothes  style={{color:"#ff7b7b"}} /> Get Your Fit:</span> <span className=""style={{color:"#c4c4c5"}}> Receive high-quality, custom-made clothing.</span></li>
                 </ul>
       </div>
-      <div className="col-lg-6" data-aos="fade-left">
+      <div className="col-lg-6 pb-3" data-aos="fade-left">
       <marquee behavior="" direction="">
                   <img src={icon1} alt="" />
-                  <IoMdArrowForward size={30}style={{color:"#ff7b7b"}}/>
-                  <img src={icon1} alt="" />
-                  <IoMdArrowForward size={30}style={{color:"#ff7b7b"}}/>
-                  <img src={icon1} alt="" />
-                  <IoMdArrowForward size={30}style={{color:"#ff7b7b"}}/>
-                  <img src={icon1} alt="" />
+                  <IoMdArrowForward size={30}style={{color:"#c4c4c5"}}/>
+                  <img src={icon2} alt="" />
+                  <IoMdArrowForward size={30}style={{color:"#c4c4c5"}}/>
+                  <img src={icon3} alt="" />
+                  <IoMdArrowForward size={30}style={{color:"#c4c4c5"}}/>
+                  <img src={icon4} alt="" />
         </marquee>
       </div>
      </div>
@@ -234,15 +240,11 @@ const Home = () => {
      <div className="row row-gap-md-5 row-gap-4 align-items-center"  >
       <div className="col-lg-6 order-lg-first order-last" data-aos="fade-right">
       <marquee behavior="" direction="right">
-                  <img src={icon1} alt="" />
-                  <IoMdArrowForward size={30}style={{color:"#ff7b7b"}}/>
-                  <img src={icon1} alt="" />
-                  <IoMdArrowForward size={30}style={{color:"#ff7b7b"}}/>
-                  <img src={icon1} alt="" />
-                  <IoMdArrowForward size={30}style={{color:"#ff7b7b"}}/>
-                  <img src={icon1} alt="" />
-                  <IoMdArrowForward size={30}style={{color:"#ff7b7b"}}/>
-                  <img src={icon1} alt="" />
+                  <img src={icon5} alt="" />
+                  <IoMdArrowForward size={30}style={{color:"#c4c4c5"}}/>
+                  <img src={icon6} alt="" />
+                  <IoMdArrowForward size={30}style={{color:"#c4c4c5"}}/>
+                  <img src={icon7} alt="" />
                 </marquee>
       </div>
       <div className="col-lg-6" data-aos="fade-left" >
@@ -256,10 +258,10 @@ const Home = () => {
      </div>
   </div>
 
-</div>
 
 
-<div className="container-fluid pb-md-5 pb-4 " data-aos="fade-up">
+
+<div className="pb-md-5 pb-4 container" data-aos="fade-up">
     
         <div className="text-center">
                 <h3 className=" displaytext text-uppercase pb-4" style={{color:"#ff7b7b"}}>Testimonials</h3>
@@ -379,6 +381,7 @@ const Home = () => {
 </div>
 
 
+</div>
 
     </>
   );

@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './One.css'
-import { useParams } from 'react-router-dom';  // Import useParams to capture URL parameters
-import Gallery from '../Gallery/Gallery';  // Assuming you have a Gallery component
-import Services from '../Services/Services';  // Assuming you have a Services component
-import Testimonials from '../Testimonials/Testimonials';  // Assuming you have a Testimonials component
+import { useParams } from 'react-router-dom';  
+import Gallery from '../Gallery/Gallery';  
+import Services from '../Services/Services';  
+import Testimonials from '../Testimonials/Testimonials'; 
 import About from '../About/About';
 import peter from './peterengland.jpg'
+import AOS from 'aos';
 
 const One = () => {
   const { name } = useParams();  // Get the tailor's name from the URL
@@ -66,44 +67,65 @@ const One = () => {
     setTailorData(selectedTailor);
   }, [name]);
 
+
+  useEffect(()=>{
+    AOS.refresh();
+ },[]);
+
   return (
-    <div className="container pb-5">
+   
+    <>
+   
+
+    <div className="container-fluid pb-5">
+      
       {tailorData ? (
-      <div className="image-container">
-        {/* <img src={tailorData.image} alt={tailorData.name} className="img-fluid w-100" style={{width:"",height:"350px"}} />
-          <h2 style={{color:"#32064A"}}>{tailorData.name}</h2>
-          <p>{tailorData.description}</p> */}
-          
-          
-          {/* Image with text overlay */}
-          <div className="img-wrapper">
-            <img src={tailorData.image} alt={tailorData.name} className="img-fluid w-100" />
-            <div className="overlay"></div> {/* This is the rgba overlay */}
-            <div className="text-overlay">
-              <h2 style={{color:"#32064A"}} className='pb-3'>{tailorData.name}</h2>
-              <p style={{color:"#E56B1F"}}>{tailorData.description}</p>
-            </div>
-          </div> 
+        
+        <div className="container">        
+    
+
+    <div className="row align-items-center row-gap-md-5 row-gap-4">
+
+     <div className="col-lg-6" data-aos="fade-right">
+     <img src={tailorData.image} className='img-fluid' alt="" />  
+     </div>
+     <div className="col-lg-6" data-aos="fade-left">
+     <h1 className='fs-4 text-uppercase'style={{color:"#ff7b7b"}}>{tailorData.name}</h1>
+     <h1 className='py-2 text-white onetext'>{tailorData.description}</h1>
+     </div>
+   </div>
 
 
-          {/* Render services, gallery, and testimonials */}
-          <About about={tailorData.about}/>
+        
+           <About about={tailorData.about}/>
           <Services services={tailorData.services} />
           <Gallery tailorName={tailorData.name} />
-          {/* <Testimonals testimonals={tailorData.testimonals} /> */}
-
+      
           {tailorData.testimonials && tailorData.testimonials.length > 0 ? (
             <Testimonials testimonials={tailorData.testimonials} />
           ) : (
-            <p>No testimonials available for this tailor.</p> 
+            <h1 className='fs-4 text-uppercase'style={{color:"#ff7b7b"}}>No testimonials available for this tailor.</h1> 
           )}
 
         </div>
+
       ) : (
-        <p>Loading...</p>
+        <h1 className='fs-4 text-uppercase'style={{color:"#ff7b7b"}}>Loading...</h1>
       )}
     </div>
+
+    </>
   );
 };
 
 export default One;
+
+
+    {/* <div className="img-wrapper">
+            <img src={tailorData.image} alt={tailorData.name} className="img-fluid w-100" />
+            <div className="overlay"></div> 
+            <div className="text-overlay">
+              <h2 style={{color:"#32064A"}} className='pb-3'>{tailorData.name}</h2>
+              <p style={{color:"#E56B1F"}}>{tailorData.description}</p>
+            </div>
+          </div>  */}

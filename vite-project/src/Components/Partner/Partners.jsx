@@ -51,6 +51,7 @@ const Partners = () => {
 
 <div className="container-fluid">
 
+   <div className="container">
    <div className="row align-items-center row-gap-md-5 row-gap-4">
      <div className="col-lg-6" data-aos="fade-right">
      <img src={partnerimg1} className='img-fluid ' alt="" />  
@@ -60,11 +61,13 @@ const Partners = () => {
      <h1 className='py-2 text-white partnertext'>Connect Your Tailoring Business with TailorsHub</h1>
      </div>
    </div>
-   
-   
-      <Swiper
+   </div>
+
+  
+    <div  className='pt-md-5 pt-3 container'>
+    <Swiper
        data-aos="fade-up"
-        className='pt-md-5 pt-3'
+        
         spaceBetween={20}
         loop={true}
         autoplay={{
@@ -134,7 +137,10 @@ const Partners = () => {
         </SwiperSlide>
        
       
-      </Swiper> 
+      </Swiper>
+    </div>
+   
+       
 
 
   <div className="container py-md-5 py-3">

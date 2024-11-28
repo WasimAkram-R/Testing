@@ -15,40 +15,40 @@
 
 
 
-/* Wrapper for image and overlay text */
-.img-wrapper {
+
+/* .img-wrapper {
     position: relative;
     width: 100%;
   }
   
   .img-wrapper img {
     width: 100%;
-    height: 350px;  /* Adjust as needed */
-    object-fit: cover;  /* Ensures image fully covers the area */
-    display: block;  /* Ensures image is displayed properly */
+    height: 350px;  
+    object-fit: cover; 
+    display: block; 
   }
   
-  /* Overlay with rgba color behind the text */
+ 
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent black overlay */
-    z-index: 1;  /* This ensures the overlay is behind the text */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
   }
   
-  /* Text wrapper centered vertically but aligned from the left */
+  
   .text-overlay {
     position: absolute;
     top: 50%;
-    left: 0;  /* Start from the left */
-    transform: translateY(-50%);  /* Vertically center the text */
+    left: 0; 
+    transform: translateY(-50%);  
     color: white;
-    text-align: left;  /* Align the text to the left */
-    padding-left: 20px; /* Optional: Add some padding from the left */
-    z-index: 2;  /* This ensures the text stays on top of the overlay */
+    text-align: left;  
+    padding-left: 20px;
+    z-index: 2; 
   }
   
   .text-overlay h2 {
@@ -60,4 +60,27 @@
   .text-overlay p {
     font-size: 1rem;
   }
+   */
+
+
+
+
+  @media (min-width:1200px){
+    .onetext{
+      font-size: 50px;
+   
+    }
+  }
   
+  @media (min-width:768px) and (max-width:1200px) {
+    .onetext{ 
+      font-size: 40px;
+  
+    }
+  }
+  @media (max-width:767px){
+    .onetext{
+  
+      font-size: 30px;
+    }
+  }

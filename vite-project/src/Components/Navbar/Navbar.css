@@ -25,3 +25,24 @@
     align-items: center;
     background-color: white; 
   }
+
+
+   @media (max-width:767px){
+    .width{
+  width: 150px !important;
+    }
+  } 
+
+  @media (min-width:768px)and (max-width:1200px) {
+    .width{
+  width: 60% !important;
+  width: 200px !important;
+  
+    }
+  }
+
+  @media (min-width:1201px) {
+    .width{
+  width: 250px !important;
+    }
+  }

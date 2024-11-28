@@ -1,8 +1,8 @@
-import React,{ useState } from 'react';
+import React,{ useState,useEffect } from 'react';
 import image1 from './Tailor_Image1.jpg';
 import image2 from './Tailor_Image2.jpg';
 import image3 from './Tailor_Image3.jpg';
-
+import AOS from 'aos';
 
 
 const Gallery = ({ tailorName }) => {
@@ -18,17 +18,21 @@ const Gallery = ({ tailorName }) => {
     'Crocodile': [ image1, 'image8.jpg', 'image9.jpg'],
   };
 
+  useEffect(()=>{
+    AOS.refresh();
+ },[]);
+
   return (
-    <div className=''>
-      <h3 style={{color:"#32064A"}} className='pb-4'>Gallery</h3>
+    <div className='py-4'>
+      <h3 style={{color:"#ff7b7b"}} className='pb-4 displaytext text-uppercase'>Gallery</h3>
 
       {/* Row 1: Traditional Outfits */}
       {tailorName === 'Peter England' && (
         <div>
-          <h4 className='pb-2' style={{color:"#E56B1F"}}>Traditional Outfits</h4>
-          <div className="row row-gap-5">
+          <h5 className='pb-2' style={{color:"white"}}>Traditional Outfits</h5>
+          <div className="row row-gap-5" data-aos="fade-up">
             {galleryImages[tailorName]['Traditional Outfits'].map((img, index) => (
-              <div className="col-md-4" key={index}>
+              <div className="col-md-4"  key={index}>
                 <img src={img} alt={`Traditional Outfit ${index + 1}`} className="img-fluid rounded-4" />
               </div>
             ))}
@@ -39,8 +43,8 @@ const Gallery = ({ tailorName }) => {
       {/* Row 2: Wedding Wear */}
       {tailorName === 'Peter England' && (
         <div className='pt-5'>
-          <h4 className='pb-2' style={{color:"#E56B1F"}}>Wedding Wear</h4>
-          <div className="row row-gap-5">
+          <h5 className='pb-2' style={{color:"white"}}>Wedding Wear</h5>
+          <div className="row row-gap-5" data-aos="fade-up">
             {galleryImages[tailorName]['Wedding Wear'].map((img, index) => (
               <div className="col-md-4" key={index}>
                 <img src={img} alt={`Wedding Wear ${index + 1}`} className="img-fluid rounded-4" />
@@ -53,8 +57,8 @@ const Gallery = ({ tailorName }) => {
       {/* Row 3: Casual Wear */}
       {tailorName === 'Peter England' && (
         <div className='py-5'>
-          <h4 className='pb-2' style={{color:"#E56B1F"}}>Casual Wear</h4>
-          <div className="row row-gap-5">
+          <h5 className='pb-2' style={{color:"white"}}>Casual Wear</h5>
+          <div className="row row-gap-5" data-aos="fade-up">
             {galleryImages[tailorName]['Casual Wear'].map((img, index) => (
               <div className="col-md-4" key={index}>
                 <img src={img} alt={`Casual Wear ${index + 1}`} className="img-fluid rounded-4" />
@@ -67,7 +71,7 @@ const Gallery = ({ tailorName }) => {
       {/* If the tailor is not 'Peter England', show generic images */}
       {tailorName !== 'Peter England' && (
         <div>
-          <div className="row">
+          <div className="row" data-aos="fade-up">
             {galleryImages[tailorName]?.map((img, index) => (
               <div className="col-md-4" key={index}>
                 <img src={img} alt={`Gallery ${index + 1}`} className="img-fluid rounded-4" />

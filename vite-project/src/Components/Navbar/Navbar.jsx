@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { IoLogInOutline } from "react-icons/io5";
 import {Link} from 'react-router-dom'
 import './Navbar.css'
-
+import logo from './T.png'
 
 const ResponsiveNavbar = () => {
 
@@ -14,23 +14,22 @@ const ResponsiveNavbar = () => {
 
 
   return (
-    <>
+    <> 
 
 <Navbar  expanded={expanded} expand="xl" style={{backgroundColor:"#151515"}} variant="light" sticky="top" className='' >
       <Container>
-        {/* Logo/Brand on the left */}
-        <Navbar.Brand className='text-white'>
-          <span  className='fw-medium' style={{fontSize:"30px",fontFamily:"cursive"}}>Tailors<span style={{color:"#ff7b7b",fontFamily:"cursive"}}>Hub</span></span>
-        </Navbar.Brand>
+       <Navbar.Brand className=''>
+        <img src={logo} alt="" className='img-fluid width' />
+        </Navbar.Brand> 
 
         {/* Center Navigation Links */}
-        <Navbar.Toggle
-           style={{outline:"none",boxShadow:"none",border:"none",}}
+        <Navbar.Toggle 
+           style={{outline:"none",boxShadow:"none",border:"none"}}
           aria-controls="navbar-nav"
           onClick={toggleNavbar} // Toggle function on click
           className="d-xl-none" // Only show on mobile (hidden on large screens)
         >
-          {/* {expanded ? <FaTimes className='' style={{color:"#ff7b7b"}} size={24} /> : <FaBars size={24} className='' style={{color:"#ff7b7b"}}  />}  */}
+       
 
           {expanded ? <div className='icons-container'>
             <FaTimes className='' style={{color:"#ff7b7b"}} size={24} />
@@ -40,10 +39,10 @@ const ResponsiveNavbar = () => {
       
         </Navbar.Toggle>
 
-        <Navbar.Collapse id="navbar-nav" className=" justify-content-center w-100 text-uppercase">
+        <Navbar.Collapse  id="navbar-nav" className=" justify-content-center w-100 text-uppercase" >
           <Nav className="mx-auto">
 
-            <Nav.Link> <Link to="/" className='text-decoration-none text-white a'>Home</Link></Nav.Link>
+            <Nav.Link > <Link to="/" className=' text-decoration-none text-white a'>Home</Link></Nav.Link>
 
             <Nav.Link href="#tailors"><Link to="/partner"className='text-decoration-none text-white a'>Partner With Us </Link></Nav.Link>
 
@@ -63,25 +62,38 @@ const ResponsiveNavbar = () => {
         {/* Login/Register buttons, positioned on the right for large screens, center for small */}
         <Navbar.Collapse className="justify-content-end">
           <Nav className="d-none d-xl-flex">
-            {/* These buttons will be displayed only on large screens */}
-            {/* <Button variant="outline-primary" href="#login" className="me-2">
-              Login
-            </Button> */}
-            <div className='d-flex justify-content-center align-items-center'>
+            {/* <div className='d-flex justify-content-center align-items-center'>
             <IoLogInOutline className='' style={{width:"30px",height:"30px",color:"#ff7b7b"}} />
-            <span className='' style={{color:"white"}}>Login</span>
-            </div>
+            <span className='text-uppercase' style={{color:"white"}}>Login</span>
+            </div> */}
             
-              
+            {/* Laptop */}            
+            <Nav.Link>
+            <Link to="/login"className='text-decoration-none text-white a text-uppercase'>
+             <div className='d-flex align-items-center'>
+             <IoLogInOutline className='text-white' style={{width:"30px",height:"30px"}} />
+             <span>Login</span>
+             </div>
+            </Link>
+            </Nav.Link> 
+          
           </Nav>
 
-          {/* These buttons will be displayed only on small screens (mobile) */}
+          {/* mobile */}
           <Nav className="d-flex d-xl-none justify-content-center">
            
-          <div className=''>
-            <span className='text-white'>Login</span>
-            <IoLogInOutline className='text-white' style={{width:"30px",height:"30px"}} />
+
+            <Nav.Link>
+            <Link to="/login"className='text-decoration-none text-white  text-uppercase'>
+            <div className='d-flex align-items-cente pb-3'>
+            <div className='a d-flex align-items-center'>
+            <span className='text-white text-uppercase'>Login</span>
+            <span className=''><IoLogInOutline className='text-white' style={{width:"30px",height:"30px"}} /></span>
             </div>
+            </div>
+            </Link>
+            </Nav.Link> 
+      
 
           </Nav>
         </Navbar.Collapse>

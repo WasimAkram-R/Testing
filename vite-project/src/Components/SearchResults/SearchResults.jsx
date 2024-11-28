@@ -9,6 +9,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 import Search from './Search.jpg'
 import './Search.css'
+import AOS from 'aos';
 
 const SearchResults = () => {
   const { location } = useParams();  // Get location from the URL
@@ -19,7 +20,7 @@ const SearchResults = () => {
   useEffect(() => {
     const allContent = [
       { location: 'Madurai', img:Search, content: 'Peter England', address:"ssi, smart city , silaiman-Madurai ", number:"999999999" },
-      { location: 'Chennai', img:'https://placehold.co/200', content: 'Zudio' , address:"porur-Madurai ", number:"9045728838"},
+      { location: 'Chennai', img:'https://placehold.co/200', content: 'Zudio' , address:"porur - Chennai ", number:"9045728838"},
       { location: 'Madurai', img:Search, content: 'Crocodile', address:"munichalai, Madurai ", number:"888888888" },
     ];
 
@@ -41,6 +42,11 @@ const SearchResults = () => {
   //   </Tooltip>
   // );
 
+
+  useEffect(()=>{
+    AOS.refresh();
+ },[]);
+
   return (
     <>
     
@@ -55,7 +61,7 @@ const SearchResults = () => {
         ) : (
           filteredContent.map((item, index) => (
             <div className="container">
-            <div className="row  mb-4   py-3 px-1 rounded-3 align-items-center" style={{backgroundColor:"#151515",boxShadow:"0px 0px 2px gray"}} key={index} onClick={() => handleRowClick(item.content)}>
+            <div data-aos="fade-up" className="row  mb-4   py-3 px-1 rounded-3 align-items-center" style={{backgroundColor:"#151515",boxShadow:"0px 0px 2px gray"}} key={index} onClick={() => handleRowClick(item.content)}>
               <div className="col-lg-2 col-md-3 d-flex justify-content-center">
                 <img src={item.img} alt={item.content} className=" img-fluid rounded searchimg"  />
               </div>

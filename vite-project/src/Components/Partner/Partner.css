@@ -122,23 +122,29 @@
 
 @media (min-width:1200px){
   .partnertext{
-    font-size: 65px;
+    font-size: 50px;
  
   }
 }
 
 @media (min-width:768px) and (max-width:1200px) {
   .partnertext{ 
-    font-size: 50px;
+    font-size: 40px;
 
   }
 }
 @media (max-width:767px){
   .partnertext{
 
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
+
+
+
+
+ 
+ 
 
 
