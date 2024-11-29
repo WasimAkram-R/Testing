@@ -23,6 +23,7 @@ import Heroimage6 from './HeroImages/Hero_Image6.jpg';
 import Heroimage7 from './HeroImages/Hero_Image7.png';
 import Heroimage8 from './HeroImages/Hero_Image8.png';
 import Heroimage9 from './HeroImages/Hero_Image9.png';
+import aboutus from './HeroImages/AboutUs.png'
 import icon1 from './HeroImages/icon1.png';
 import icon2 from './HeroImages/icon2.png';
 import icon3 from './HeroImages/icon3.png';
@@ -43,6 +44,8 @@ import AOS from 'aos';
 import Carousel from 'react-bootstrap/Carousel';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+// import {  Pagination } from 'swiper';
 import 'swiper/css'; 
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -51,6 +54,9 @@ import { FaQuoteLeft } from "react-icons/fa6";
 import { FaQuoteRight } from "react-icons/fa6";
 
 
+import { IoMdHappy } from "react-icons/io";
+import { BiSupport } from "react-icons/bi";
+import { FaRegThumbsUp } from "react-icons/fa";
 
 const Home = () => {
   const [location, setLocation] = useState('');  // State to hold location input
@@ -151,8 +157,8 @@ const Home = () => {
       <div className="d-flex column-gap-3">
         <input  
           type="text" 
-          placeholder="Enter Location" 
-          className="w-50 form-control bg-transparent  homeform" 
+          placeholder="Search city, designs, tailors" 
+          className="w-75 form-control bg-transparent  homeform" 
           value={location}
           onChange={handleLocationChange} 
         />
@@ -286,125 +292,79 @@ const Home = () => {
       </div>
      </div>
   </div>
+ 
+
+
+  <div className="container " >
+
+<div className="row  align-items-center row-gap-md-5  row-gap-4">
 
 
 
+  <div className="col-lg-6"data-aos="fade-right">
 
-<div className="pb-md-5 pb-4 container" data-aos="fade-up">
+    <div className="row gy-4">
+
+      <div className="col-lg-6"data-aos="fade-right">
+        <div className="d-flex h-100 align-items-center gap-3">
+        < IoMdHappy  className=" flex-shrink-0 icon-spin" style={{width:"50px",height:"50px",color:"#ff7b7b"}}/>
+          <div>
+            <span style={{fontSize:"50px",  color:"white"}}>37+</span>
+            <p className='displaypara'  style={{color:"#c4c4c5"}}>Happy Tailors</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-lg-6"data-aos="fade-left">
+      <div className="d-flex h-100 align-items-center gap-3">
+        < IoMdHappy  className="icon-spin flex-shrink-0" style={{width:"50px",height:"50px",color:"#ff7b7b"}}/>
+          <div>
+            <span style={{fontSize:"50px",  color:"white"}}>75+</span>
+            <p className='displaypara'  style={{color:"#c4c4c5"}}>Happy Customers</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-lg-6">
+      <div className="d-flex h-100 align-items-center gap-3">
+        < FaRegThumbsUp  className="icon-spin flex-shrink-0 " style={{width:"45px",height:"50px",color:"#ff7b7b"}}/>
+          <div>
+            <span style={{fontSize:"50px",  color:"white"}}>113+</span>
+            <p className='displaypara'  style={{color:"#c4c4c5"}}>Work Done</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-lg-6">
+      <div className="d-flex h-100 align-items-center gap-3">
+        < BiSupport className="icon-spin flex-shrink-0" style={{width:"50px",height:"50px",color:"#ff7b7b"}}/>
+          <div>
+            <span style={{fontSize:"50px",  color:"white"}}>24</span>
+            <p className='displaypara'   style={{color:"#c4c4c5"}}>Email Support</p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+  </div>
+
+  <div className="col-lg-6 "data-aos="fade-left">
+    <img src={aboutus} alt="" className="img-fluid"/>
+  </div>
+
+</div>
+
+</div>
+
+
+
+<div className="py-md-5 py-4 container" data-aos="fade-up">
     
         <div className="text-center">
                 <h3 className=" displaytext text-uppercase pb-4" style={{color:"#ff7b7b"}}>Testimonials</h3>
             </div>
 
-       {/* <Swiper
-        spaceBetween={20}
-        loop={true}
-        autoplay={{
-          delay: 1000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        effect="fade"
-        breakpoints={{
-          // When window width is >= 320px (small mobile devices)
-          320: {
-            slidesPerView: 1,  // 1 slide at a time
-          },
-          // When window width is >= 768px (tablet)
-          768: {
-            slidesPerView: 2,  // Show 2 slides at a time
-          },
-          // When window width is >= 1024px (desktop)
-          1024: {
-            slidesPerView: 3,  // Show 3 slides at a time
-          },
-        }}
-      >
-         
-        <SwiperSlide  className=' p-4 ' style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
-          <div className="testimonial ">
-          
-            <p className="testimonial-text displaypara " style={{color:"#c4c4c5"}}><FaQuoteLeft size={35}  style={{color:"#ff7b7b"}}/>  The tailor was extremely professional,I could see their dedication to perfecting every detail. The quality of my custom suit exceeded all expectations. <FaQuoteRight size={35}  style={{color:"#ff7b7b"}}/>
-            </p>
-            
-
-
-            <div className="row align-items-end">
-              <div className="col">
-              <h4 className="testimonial-name text-white">Customer 1</h4>
-              <h6 className="testimonial-name" style={{color:"#ff7b7b"}}>client</h6>
-              </div>
-
-            </div>
-
-          </div>
-        </SwiperSlide>
-
-        
-
-       
-        <SwiperSlide className='p-4' style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
-          <div className="testimonial">
-         
-            <p style={{color:"#c4c4c5"}}className="testimonial-text displaypara"><FaQuoteLeft size={35}  style={{color:"#ff7b7b"}}/> The best experience I’ve had with custom clothing. The attention to detail and the fit were perfect. I feel so confident every time I wear my new suit. Highly recommend! <FaQuoteRight size={35}  style={{color:"#ff7b7b"}}/>
-            </p>
-            
-         
-            <div className="row align-items-end">
-              <div className="col">
-              <h4 className="testimonial-name text-white">Customer 2</h4>
-              <h6 className="testimonial-name" style={{color:"#ff7b7b"}}>client</h6>
-              </div>
-            </div>
-
-
-          </div>
-        </SwiperSlide>
-
-     
-        <SwiperSlide className=' p-4' style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
-          <div className="testimonial">
-   
-            <p style={{color:"#c4c4c5"}}className="testimonial-text displaypara"><FaQuoteLeft size={35}  style={{color:"#ff7b7b"}}/> I’ve always struggled with finding clothes that fit me properly, but after connecting with a tailor, everything changed. The tailor was so patient, taking time to understand my preferences and suggesting the best style for my body.  <FaQuoteRight size={35}  style={{color:"#ff7b7b"}}/>
-            </p>
-            
-          
-            <div className="row align-items-end">
-              <div className="col">
-              <h4 className="testimonial-name text-white">Customer 3</h4>
-              <h6 className="testimonial-name" style={{color:"#ff7b7b"}}>client</h6>
-              </div>
-         
-            </div>
-
-
-          </div>
-        </SwiperSlide>
-
- 
-        <SwiperSlide className='p-4' style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
-          <div className="testimonial">
-    
-            <p style={{color:"#c4c4c5"}}className="testimonial-text displaypara"><FaQuoteLeft size={35}  style={{color:"#ff7b7b"}}/> I’ve been looking for a reliable tailor for years, and I finally found one! The process was simple, and the tailor took the time to understand my specific measurements and preferences. <FaQuoteRight size={35}  style={{color:"#ff7b7b"}}/> 
-            </p>
-           
-          
-            <div className="row align-items-end">
-              <div className="col">
-              <h4 className="testimonial-name text-white">Customer 4</h4>
-              <h6 className="testimonial-name" style={{color:"#ff7b7b"}}>client</h6>
-              </div>
-     
-            </div>
-
-
-          </div>
-        </SwiperSlide>
-
-      </Swiper>  */}
-         
 
 
 
@@ -417,7 +377,10 @@ const Home = () => {
       }}
       pagination={{
         clickable: true,
+        type: 'bullets',
       }}
+      navigation={true}
+      // modules={[Navigation, Pagination]} 
       effect="fade"
       breakpoints={{
         320: {
@@ -431,7 +394,7 @@ const Home = () => {
         },
       }}
     >
-      <SwiperSlide className="p-4">
+      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
         <div className="testimonial">
           <p
             className={`testimonial-text displaypara ${showMore1 ? 'show-more' : ''}`}
@@ -453,7 +416,7 @@ const Home = () => {
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="p-4">
+      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
         <div className="testimonial">
           <p
             className={`testimonial-text displaypara ${showMore2 ? 'show-more' : ''}`}
@@ -475,7 +438,7 @@ const Home = () => {
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="p-4">
+      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
         <div className="testimonial">
           <p
             className={`testimonial-text displaypara ${showMore3 ? 'show-more' : ''}`}
@@ -497,7 +460,7 @@ const Home = () => {
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="p-4">
+      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
         <div className="testimonial">
           <p
             className={`testimonial-text displaypara ${showMore4 ? 'show-more' : ''}`}

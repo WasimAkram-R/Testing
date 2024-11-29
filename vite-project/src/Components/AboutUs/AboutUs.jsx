@@ -1,11 +1,7 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos';
 import './AboutUs.css'
-import { IoMdHappy } from "react-icons/io";
-import { BiSupport } from "react-icons/bi";
-import { FaRegThumbsUp } from "react-icons/fa";
-
-import aboutus from './AboutUs.png'
+// import aboutus from './AboutUs.png'
 import aboutus1 from './AboutUs1.jpg'
 const AboutUs = () => {
 
@@ -53,67 +49,8 @@ const AboutUs = () => {
 
 
       
-     <div className="container py-md-5 py-4" >
-
-<div className="row  align-items-center row-gap-md-5  row-gap-4">
 
 
-
-  <div className="col-lg-6"data-aos="fade-right">
-
-    <div className="row gy-4">
-
-      <div className="col-lg-6"data-aos="fade-right">
-        <div className="d-flex h-100 align-items-center gap-3">
-        < IoMdHappy  className=" flex-shrink-0 icon-spin" style={{width:"50px",height:"50px",color:"#ff7b7b"}}/>
-          <div>
-            <span style={{fontSize:"50px",  color:"white"}}>10+</span>
-            <p className='displaypara'  style={{color:"#c4c4c5"}}>Happy Tailors</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="col-lg-6"data-aos="fade-left">
-      <div className="d-flex h-100 align-items-center gap-3">
-        < IoMdHappy  className="icon-spin flex-shrink-0" style={{width:"50px",height:"50px",color:"#ff7b7b"}}/>
-          <div>
-            <span style={{fontSize:"50px",  color:"white"}}>20+</span>
-            <p className='displaypara'  style={{color:"#c4c4c5"}}>Happy Customers</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="col-lg-6">
-      <div className="d-flex h-100 align-items-center gap-3">
-        < FaRegThumbsUp  className="icon-spin flex-shrink-0 " style={{width:"45px",height:"50px",color:"#ff7b7b"}}/>
-          <div>
-            <span style={{fontSize:"50px",  color:"white"}}>40+</span>
-            <p className='displaypara'  style={{color:"#c4c4c5"}}>Work Done</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="col-lg-6">
-      <div className="d-flex h-100 align-items-center gap-3">
-        < BiSupport className="icon-spin flex-shrink-0" style={{width:"50px",height:"50px",color:"#ff7b7b"}}/>
-          <div>
-            <span style={{fontSize:"50px",  color:"white"}}>24</span>
-            <p className='displaypara'   style={{color:"#c4c4c5"}}>Hours Support</p>
-          </div>
-        </div>
-      </div>
-    
-    </div>
-
-  </div>
-
-  <div className="col-lg-6 "data-aos="fade-left">
-    <img src={aboutus} alt="" className="img-fluid"/>
-  </div>
-
-</div>
-
-</div>
      </div> 
      
     </>

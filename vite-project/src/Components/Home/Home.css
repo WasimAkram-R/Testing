@@ -18,6 +18,13 @@
   .homeform::placeholder{
     color: white !important;
   }
+
+  @media (max-width:576px){
+    .homeform::placeholder{
+        font-size:13px !important;
+      }
+  }
+
   .homeform:focus{
     outline: none !important;  
     box-shadow: none !important;
@@ -107,13 +114,27 @@
 
 
 
+/* spin  */
+
+.icon-spin{
+    animation: rotate 2s infinite ease-in-out;
+}
+@keyframes rotate {
+    0%,100%{
+        transform: translateY(0)
+    }
+    50%{
+        transform: translateY(-10px)
+    }
+}
+
 
 /* swiper */
 
 .testimonial-text {
-    max-height: 120px; /* Limit the visible text height by default */
+    max-height: 110px; /* Limit the visible text height by default */
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis !important;
   }
   
   .testimonial-text.show-more {
@@ -129,4 +150,20 @@
     cursor: pointer;
   }
   
+  /* Style for next and previous buttons */
+.swiper-button-next, .swiper-button-prev {
+    color: #ff7b7b !important;  
+  }
   
+  /* If you want to change the hover state as well */
+  .swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #888; 
+}
+
+.swiper-button-next {
+    right: -1px !important;  /* Position next button on the right */
+  }
+  
+  .swiper-button-prev {
+    left: -1px !important;  /* Position prev button on the left */
+  }
