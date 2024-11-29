@@ -79,6 +79,35 @@ const Home = () => {
   },[]);
 
 
+//swiper
+
+
+  const [showMore1, setShowMore1] = useState(false);
+  const [showMore2, setShowMore2] = useState(false);
+  const [showMore3, setShowMore3] = useState(false);
+  const [showMore4, setShowMore4] = useState(false);
+
+  const handleShowMore = (index) => {
+    switch (index) {
+      case 1:
+        setShowMore1(!showMore1);
+        break;
+      case 2:
+        setShowMore2(!showMore2);
+        break;
+      case 3:
+        setShowMore3(!showMore3);
+        break;
+      case 4:
+        setShowMore4(!showMore4);
+        break;
+      default:
+        break;
+    }
+  };
+
+
+
 
 
   return (
@@ -267,7 +296,7 @@ const Home = () => {
                 <h3 className=" displaytext text-uppercase pb-4" style={{color:"#ff7b7b"}}>Testimonials</h3>
             </div>
 
-       <Swiper
+       {/* <Swiper
         spaceBetween={20}
         loop={true}
         autoplay={{
@@ -294,10 +323,10 @@ const Home = () => {
         }}
       >
          
-        <SwiperSlide className=' p-4' style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
-          <div className="testimonial">
+        <SwiperSlide  className=' p-4 ' style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
+          <div className="testimonial ">
           
-            <p className="testimonial-text displaypara" style={{color:"#c4c4c5"}}><FaQuoteLeft size={35}  style={{color:"#ff7b7b"}}/>  The tailor was extremely professional,I could see their dedication to perfecting every detail. The quality of my custom suit exceeded all expectations. <FaQuoteRight size={35}  style={{color:"#ff7b7b"}}/>
+            <p className="testimonial-text displaypara " style={{color:"#c4c4c5"}}><FaQuoteLeft size={35}  style={{color:"#ff7b7b"}}/>  The tailor was extremely professional,I could see their dedication to perfecting every detail. The quality of my custom suit exceeded all expectations. <FaQuoteRight size={35}  style={{color:"#ff7b7b"}}/>
             </p>
             
 
@@ -374,8 +403,122 @@ const Home = () => {
           </div>
         </SwiperSlide>
 
-      </Swiper> 
- 
+      </Swiper>  */}
+         
+
+
+
+         <Swiper
+      spaceBetween={20}
+      loop={true}
+      autoplay={{
+        delay: 1000,
+        disableOnInteraction: false,
+      }}
+      pagination={{
+        clickable: true,
+      }}
+      effect="fade"
+      breakpoints={{
+        320: {
+          slidesPerView: 1,  // 1 slide at a time
+        },
+        768: {
+          slidesPerView: 2,  // Show 2 slides at a time
+        },
+        1024: {
+          slidesPerView: 3,  // Show 3 slides at a time
+        },
+      }}
+    >
+      <SwiperSlide className="p-4">
+        <div className="testimonial">
+          <p
+            className={`testimonial-text displaypara ${showMore1 ? 'show-more' : ''}`}
+            style={{ color: "#c4c4c5" }}
+          >
+            <FaQuoteLeft size={35} style={{ color: "#ff7b7b" }} />
+            The tailor was extremely professional, I could see their dedication to perfecting every detail. The quality of my custom suit exceeded all expectations.
+            <FaQuoteRight size={35} style={{ color: "#ff7b7b" }} />
+          </p>
+          <div className="row align-items-end">
+            <div className="col">
+              <h4 className="testimonial-name text-white">Customer 1</h4>
+              <h6 className="testimonial-name" style={{ color: "#ff7b7b" }}>client</h6>
+            </div>
+          </div>
+          <button className="show-more-btn" onClick={() => handleShowMore(1)}>
+            {showMore1 ? 'Show Less' : 'See More'}
+          </button>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide className="p-4">
+        <div className="testimonial">
+          <p
+            className={`testimonial-text displaypara ${showMore2 ? 'show-more' : ''}`}
+            style={{ color: "#c4c4c5" }}
+          >
+            <FaQuoteLeft size={35} style={{ color: "#ff7b7b" }} />
+            The best experience I’ve had with custom clothing. The attention to detail and the fit were perfect. I feel so confident every time I wear my new suit. Highly recommend!
+            <FaQuoteRight size={35} style={{ color: "#ff7b7b" }} />
+          </p>
+          <div className="row align-items-end">
+            <div className="col">
+              <h4 className="testimonial-name text-white">Customer 2</h4>
+              <h6 className="testimonial-name" style={{ color: "#ff7b7b" }}>client</h6>
+            </div>
+          </div>
+          <button className="show-more-btn" onClick={() => handleShowMore(2)}>
+            {showMore2 ? 'Show Less' : 'See More'}
+          </button>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide className="p-4">
+        <div className="testimonial">
+          <p
+            className={`testimonial-text displaypara ${showMore3 ? 'show-more' : ''}`}
+            style={{ color: "#c4c4c5" }}
+          >
+            <FaQuoteLeft size={35} style={{ color: "#ff7b7b" }} />
+            I’ve always struggled with finding clothes that fit me properly, but after connecting with a tailor, everything changed. The tailor was so patient, taking time to understand my preferences and suggesting the best style for my body.
+            <FaQuoteRight size={35} style={{ color: "#ff7b7b" }} />
+          </p>
+          <div className="row align-items-end">
+            <div className="col">
+              <h4 className="testimonial-name text-white">Customer 3</h4>
+              <h6 className="testimonial-name" style={{ color: "#ff7b7b" }}>client</h6>
+            </div>
+          </div>
+          <button className="show-more-btn" onClick={() => handleShowMore(3)}>
+            {showMore3 ? 'Show Less' : 'See More'}
+          </button>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide className="p-4">
+        <div className="testimonial">
+          <p
+            className={`testimonial-text displaypara ${showMore4 ? 'show-more' : ''}`}
+            style={{ color: "#c4c4c5" }}
+          >
+            <FaQuoteLeft size={35} style={{ color: "#ff7b7b" }} />
+            I’ve been looking for a reliable tailor for years, and I finally found one! The process was simple, and the tailor took the time to understand my specific measurements and preferences.
+            <FaQuoteRight size={35} style={{ color: "#ff7b7b" }} />
+          </p>
+          <div className="row align-items-end">
+            <div className="col">
+              <h4 className="testimonial-name text-white">Customer 4</h4>
+              <h6 className="testimonial-name" style={{ color: "#ff7b7b" }}>client</h6>
+            </div>
+          </div>
+          <button className="show-more-btn" onClick={() => handleShowMore(4)}>
+            {showMore4 ? 'Show Less' : 'See More'}
+          </button>
+        </div>
+      </SwiperSlide>
+    </Swiper>
 
 
 </div>

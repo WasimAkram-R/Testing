@@ -15,27 +15,3 @@
 
 
 
-
-/* 
-.input-container {
-    position: relative;
-  }
-  
-  .icon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    color: #c4c4c5;
-    pointer-events: none; 
-    transition: opacity 0.3s ease;
-  }
-  
-  .logininput {
-    padding-left: 40px; 
-  }
-  
-  .logininput.hide-icon {
-    padding-left: 10px; 
-  }
-   */

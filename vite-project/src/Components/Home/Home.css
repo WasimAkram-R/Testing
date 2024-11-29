@@ -108,3 +108,25 @@
 
 
 
+/* swiper */
+
+.testimonial-text {
+    max-height: 120px; /* Limit the visible text height by default */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .testimonial-text.show-more {
+    max-height: none; /* Remove the height limitation when expanded */
+    overflow-y: scroll; /* Show scroll when content overflows */
+  }
+  
+  .show-more-btn {
+    background-color: #ff7b7b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  
