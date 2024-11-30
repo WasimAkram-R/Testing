@@ -1,11 +1,10 @@
 
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';  // Import useNavigate for navigation
+import { useParams, useNavigate } from 'react-router-dom'; 
 import { CiLocationOn } from "react-icons/ci";
 import { MdVerifiedUser } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa6";
-// import { OverlayTrigger, Tooltip } from 'react-bootstrap';
-// import Button from 'react-bootstrap/Button';
+
 
 import Search from './Search.jpg'
 import './Search.css'
@@ -28,19 +27,12 @@ const SearchResults = () => {
     setFilteredContent(filtered);
   }, [location]);
 
-  const handleRowClick = (tailorName) => {
-    // Navigate to the One component and pass the tailor's name in the URL
+  const handleImageClick = (tailorName) => {
     navigate(`/tailor/${tailorName}`);
   };
 
 
-  //tooltip
 
-  // const renderTooltip = (props, phoneNumber) => (
-  //   <Tooltip id="button-tooltip" {...props}>
-  //     {phoneNumber ? phoneNumber : 'Phone number not available'}
-  //   </Tooltip>
-  // );
 
 
   useEffect(()=>{
@@ -61,12 +53,12 @@ const SearchResults = () => {
         ) : (
           filteredContent.map((item, index) => (
             <div className="container">
-            <div data-aos="fade-up" className="row  mb-4   py-3 px-1 rounded-3 align-items-center" style={{backgroundColor:"#151515",boxShadow:"0px 0px 2px gray"}} key={index} onClick={() => handleRowClick(item.content)}>
+            <div data-aos="fade-up" className="row  mb-4   py-3 px-1 rounded-3 align-items-center" style={{backgroundColor:"#151515",boxShadow:"0px 0px 2px gray"}} key={index} >
               <div className="col-lg-2 col-md-3 d-flex justify-content-center">
-                <img src={item.img} alt={item.content} className=" img-fluid rounded searchimg"  />
+                <img src={item.img} alt={item.content} className=" img-fluid rounded searchimg" onClick={() => handleImageClick(item.content)} />
               </div>
               <div className="col-lg-10  col-md-9  text-md-start text-center py-3 py-md-0">
-                <h3 style={{color:"#ff7b7b"}}><MdVerifiedUser style={{color:"#ff7b7b"}} /> {item.content}</h3>
+                <h3 style={{color:"#ff7b7b"}} onClick={() => handleImageClick(item.content)}><MdVerifiedUser style={{color:"#ff7b7b"}} /> {item.content}</h3>
                 <p className='py-1' style={{color:"#c4c4c5"}}><CiLocationOn style={{color:"#c4c4c5"}}/> {item.address}</p>
                  
                  <button style={{backgroundColor:"transparent",border:0,boxShadow:"0px 0px 2px #ff7b7b"}} className=" me-3 px-4 py-2 rounded-1 text-white " >  <FaWhatsapp size={25} /> {item.number} </button>

@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import './Partner.css'
 import AOS from 'aos';
+import { useNavigate } from 'react-router-dom';
 
 import partnerimg1 from './Partner1.png'
 import partnerimg2 from './Partner2.png'
@@ -31,6 +32,12 @@ const Partners = () => {
   useEffect(()=>{
     AOS.refresh();
  },[]);
+
+ const navigate= useNavigate()
+
+ const handleGetStartedClick=()=>{
+   navigate('/login')
+ }
   return (
     <>
      
@@ -77,6 +84,7 @@ const Partners = () => {
         pagination={{
           clickable: true,
         }}
+        navigation={true}
         effect="fade"
         breakpoints={{
           
@@ -94,30 +102,30 @@ const Partners = () => {
         }}
       >
 
-<SwiperSlide className=' p-4' style={{ backgroundColor: "#151515", borderTop: "5px solid #ff7b7b" }}>
+<SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "#151515", borderTop: "5px solid #ff7b7b" }}>
           <div className="testimonial">
           <h6 className='text-white displaypara'>1. Partner with Us</h6>
-            <p className="testimonial-text displaypara" style={{color:"#c4c4c5"}}>
+            <p className="displaypara" style={{color:"#c4c4c5"}}>
             Join our platform to showcase your tailoring skills to a wider audience.
             </p>
             
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className=' p-4' style={{ backgroundColor: "#151515", borderTop: "5px solid #ff7b7b" }}>
+        <SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "#151515", borderTop: "5px solid #ff7b7b" }}>
           <div className="testimonial ">
           <h6  className='text-white displaypara'>2. Customers Finds You</h6>
-            <p style={{color:"#c4c4c5"}}className="testimonial-text displaypara">
+            <p style={{color:"#c4c4c5"}}className=" displaypara">
             Customers easily find tailors based on  their needs.
             </p>
 
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className=' p-4' style={{ backgroundColor: "#151515", borderTop: "5px solid #ff7b7b" }}>
+        <SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "#151515", borderTop: "5px solid #ff7b7b" }}>
           <div className="testimonial">
           <h6 className='text-white displaypara'>3. Expand Your Business</h6>
-            <p className="testimonial-text displaypara" style={{color:"#c4c4c5"}}>
+            <p className=" displaypara" style={{color:"#c4c4c5"}}>
             Get access to more customers and grow your tailoring business seamlessly.
             </p>
             
@@ -126,10 +134,10 @@ const Partners = () => {
 
         
          
-        <SwiperSlide className=' p-4' style={{ backgroundColor: "#151515", borderTop: "5px solid #ff7b7b" }}>
+        <SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "#151515", borderTop: "5px solid #ff7b7b" }}>
           <div className="testimonial">
           <h6 className='text-white displaypara'>4. Boost Your Earnings</h6>
-            <p className="testimonial-text displaypara" style={{color:"#c4c4c5"}}>
+            <p className=" displaypara" style={{color:"#c4c4c5"}}>
              Earn more by partnering with us and tapping into our vast network of clients.
             </p>
             
@@ -239,7 +247,8 @@ const Partners = () => {
       <div className="col-lg-6"data-aos="fade-right">
         <h3 className="pb-2 displaytext text-uppercase " style={{color:"#ff7b7b"}}>Contact Us</h3>
         <p className="pb-3 displaypara" style={{color:"#c4c4c5"}}>Ready to collaborate with TailorsHub?</p>
-        <button className=" px-4 py-2 rounded-5 text-uppercase formsbutton"style={{backgroundColor:"transparent",color:"white"}}>Get Started</button>
+        <button className=" px-4 py-2 rounded-5 text-uppercase formsbutton"style={{backgroundColor:"transparent",color:"white"}}
+        onClick={handleGetStartedClick}>Get Started</button>
       </div>
 
       {/* Right Column: Contact Form */}

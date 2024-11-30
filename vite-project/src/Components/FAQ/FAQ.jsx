@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import Accordion from 'react-bootstrap/Accordion';
 import AOS from 'aos';
-
+import { PiMaskHappyBold } from "react-icons/pi";
 const FAQ = () => {
 
   useEffect(()=>{
@@ -18,7 +18,7 @@ const FAQ = () => {
 <h1 className='displaytext' style={{color:"#ff7b7b"}}>FAQ</h1>
 
 
-<h3 className='pt-md-5 pt-4 pb-3 text-white text-uppercase '>For Customers</h3> 
+<h3 className='pt-md-5 pt-4 pb-3 text-white text-uppercase '>For Customers <PiMaskHappyBold style={{color:"#ff7b7b"}} /></h3> 
 
 
 <Accordion data-aos="fade-right" >
@@ -65,7 +65,8 @@ expertise. You can request quotes from multiple tailors to compare prices.
 
 
 
-<h3 className='pt-md-5 pt-4 pb-3 text-white text-uppercase '>For Tailors</h3>
+<h3 className='pt-md-5 pt-4 pb-3 text-white text-uppercase '>For Tailors <PiMaskHappyBold style={{color:"#ff7b7b"}} /></h3>
+
 
 
 

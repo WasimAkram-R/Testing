@@ -1,10 +1,17 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos';
+import { useNavigate } from 'react-router-dom'; 
 const ContactUs = () => {
 
+  
   useEffect(()=>{
     AOS.refresh();
- },[]);
+  },[]);
+  
+  const navigate = useNavigate(); 
+  const handleGetStartedClick = () => {
+    navigate('/login');
+  };
 
   return (
     <>
@@ -18,7 +25,7 @@ const ContactUs = () => {
      <h2 className='pb-2 displaytext' style={{color:"#ff7b7b"}}>Contact Us</h2>
      <p className='pb-2 displaypara' style={{color:"#c4c4c5"}} >Ready to collaborate with TailorsHub?</p>
      <div>
-     <button className=" px-4 py-2 rounded-5 text-uppercase formsbutton"style={{backgroundColor:"transparent",color:"white"}}>Get Started</button>
+     <button className=" px-4 py-2 rounded-5 text-uppercase formsbutton"style={{backgroundColor:"transparent",color:"white"}}onClick={handleGetStartedClick}>Get Started</button>
      </div>
      </div>
    </div>

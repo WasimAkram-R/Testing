@@ -9,7 +9,18 @@
   font-style: normal;
 }
 
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+.swiper-container {
+  overflow-x: hidden;
+}
 
   body{
   

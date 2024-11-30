@@ -275,7 +275,7 @@ const Home = () => {
      <div className="row row-gap-md-5 row-gap-4 align-items-center"  >
       <div className="col-lg-6 order-lg-first order-last" data-aos="fade-right">
       <marquee behavior="" direction="right">
-                  <img src={icon5} alt="" />
+                  <img src={icon5}  alt="" />
                   <IoMdArrowForward size={30}style={{color:"#c4c4c5"}}/>
                   <img src={icon6} alt="" />
                   <IoMdArrowForward size={30}style={{color:"#c4c4c5"}}/>

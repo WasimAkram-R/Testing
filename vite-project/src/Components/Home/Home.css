@@ -132,14 +132,14 @@
 /* swiper */
 
 .testimonial-text {
-    max-height: 110px; /* Limit the visible text height by default */
+    max-height: 110px; 
     overflow: hidden;
     text-overflow: ellipsis !important;
   }
   
   .testimonial-text.show-more {
-    max-height: none; /* Remove the height limitation when expanded */
-    overflow-y: scroll; /* Show scroll when content overflows */
+    max-height: none; 
+    overflow-y: scroll; 
   }
   
   .show-more-btn {
@@ -157,7 +157,8 @@
   
   /* If you want to change the hover state as well */
   .swiper-button-next:hover, .swiper-button-prev:hover {
-    color: #888; 
+    color: #888 !important; 
+    transition: 0.5s;
 }
 
 .swiper-button-next {
