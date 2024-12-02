@@ -1,6 +1,28 @@
  @media (max-width:767px){
     .searchimg {
-      height: 200px !important;
+      height: 250px !important;
+      width:100%;
     }
 } 
 
+@media (min-width:375px){
+  .enquirybutton{
+
+    margin-inline: 10px;
+  }
+}
+@media (max-width:425px){
+  .enquirybutton{
+    margin-bottom: 10px;
+  }
+}
+@media (max-width:320px){
+  .enquirybutton{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
+
+
+ 
