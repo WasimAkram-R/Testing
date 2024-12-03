@@ -121,11 +121,25 @@ const One = () => {
 export default One;
 
 
-    {/* <div className="img-wrapper">
-            <img src={tailorData.image} alt={tailorData.name} className="img-fluid w-100" />
-            <div className="overlay"></div> 
-            <div className="text-overlay">
-              <h2 style={{color:"#32064A"}} className='pb-3'>{tailorData.name}</h2>
-              <p style={{color:"#E56B1F"}}>{tailorData.description}</p>
-            </div>
-          </div>  */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

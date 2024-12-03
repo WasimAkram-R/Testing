@@ -111,3 +111,39 @@
     }
   }
    */
+
+
+
+   /* testimonialsswiper */
+
+   @media (min-width:768px) {
+    .testimonialsswiper{
+      min-height: 300px !important; 
+  
+    }
+    
+  } 
+
+  @media (max-width:768px) {
+    .testimonialsswiper{
+      min-height: 250px !important; 
+  
+    }
+    
+  } 
+
+
+
+
+
+
+  .testimonial-form {
+    background-color: #151515;
+    padding: 20px;
+    border-radius: 10px;
+  }
+    .testimonialsswiper {
+    border-radius: 10px;
+  }
+
+  

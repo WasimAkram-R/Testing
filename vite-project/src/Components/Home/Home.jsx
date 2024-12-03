@@ -394,7 +394,7 @@ const Home = () => {
         },
       }}
     >
-      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
+      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b",borderRadius:"10px" }}>
         <div className="testimonial">
           <p
             className={`testimonial-text displaypara ${showMore1 ? 'show-more' : ''}`}
@@ -416,7 +416,7 @@ const Home = () => {
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
+      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" ,borderRadius:"10px"}}>
         <div className="testimonial">
           <p
             className={`testimonial-text displaypara ${showMore2 ? 'show-more' : ''}`}
@@ -438,7 +438,7 @@ const Home = () => {
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
+      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" ,borderRadius:"10px"}}>
         <div className="testimonial">
           <p
             className={`testimonial-text displaypara ${showMore3 ? 'show-more' : ''}`}
@@ -460,7 +460,7 @@ const Home = () => {
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
+      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b",borderRadius:"10px" }}>
         <div className="testimonial">
           <p
             className={`testimonial-text displaypara ${showMore4 ? 'show-more' : ''}`}

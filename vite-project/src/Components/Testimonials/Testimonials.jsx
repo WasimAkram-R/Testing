@@ -1,176 +1,34 @@
 
 
-import {React,useEffect} from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css'; 
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/effect-fade'; 
-import { FaQuoteLeft } from "react-icons/fa6";
-import { FaQuoteRight } from "react-icons/fa6";
-import AOS from 'aos';
-
-const Testimonials = ({ testimonials }) => {
-
-  useEffect(()=>{
-    AOS.refresh();
- },[]);
-
-  return (
-    <div data-aos="fade-up">
-      <h3 style={{color:"#ff7b7b"}} className='pb-3 displaytext text-uppercase' >Customer Testimonials</h3>
-      <Swiper
-        
-        spaceBetween={20}
-        loop={true}
-        autoplay={{
-          delay: 1000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        effect="fade"
-        breakpoints={{
-          // When window width is >= 320px (small mobile devices)
-          320: {
-            slidesPerView: 1,  // 1 slide at a time
-          },
-          // When window width is >= 768px (tablet)
-          768: {
-            slidesPerView: 2,  // Show 2 slides at a time
-          },
-          // When window width is >= 1024px (desktop)
-          1024: {
-            slidesPerView: 3,  // Show 3 slides at a time
-          },
-        }}
-      >
-           {testimonials.map((testimonial, index) => (
-        <SwiperSlide key={index} className=' p-4' style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
-          <div className="">
-          
-            <p className=" displaypara" style={{color:"#c4c4c5"}}><FaQuoteLeft size={35}  style={{color:"#ff7b7b"}}/>  {testimonial.text} <FaQuoteRight size={35}  style={{color:"#ff7b7b"}}/>
-            </p>
-            
+// import {React,useEffect} from 'react';
 
 
-            <div className="row align-items-end">
-              <div className="col">
-              <h4 className="testimonial-name text-white">{testimonial.author}</h4>
-              <h6 className="testimonial-name" style={{color:"#ff7b7b"}}>client</h6>
-              </div>
-
-            </div>
-
-          </div>
-        </SwiperSlide>
-
-  
-))}
-      </Swiper> 
-
-
-    </div>
-  );
-};
-
-export default Testimonials;
-
-
-
-
-
-
-{/* <Carousel.Item interval={1000}>
-<div className="d-flex justify-content-center">
-   <img
-         className="d-block w-25 rounded-circle"
-         src="https://via.placeholder.com/100"
-         alt=""
-         style={{ maxWidth: '100px', marginRight: '20px' }}
-       />
-   <div>
-   <p style={{fontSize:"15px"}}></p>
-   <h6></h6>
-   </div>
-
-</div>
-</Carousel.Item>
-
-<Carousel.Item interval={1000}>
-<div className="d-flex justify-content-center">
-   <img
-         className="d-block w-25 rounded-circle"
-         src="https://via.placeholder.com/100"
-         alt=""
-         style={{ maxWidth: '100px', marginRight: '20px' }}
-       />
-   <div>
-   <p style={{fontSize:"15px"}}></p>
-   <h6></h6>
-   </div>
-
-</div>
-</Carousel.Item> */}
-
-
-
-
-// import React, { useEffect, useState } from 'react';
-// import Carousel from 'react-bootstrap/Carousel';
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import 'swiper/css'; 
 // import 'swiper/css/pagination';
 // import 'swiper/css/navigation';
 // import 'swiper/css/effect-fade'; 
-// import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
+// import { FaQuoteLeft } from "react-icons/fa6";
+// import { FaQuoteRight } from "react-icons/fa6";
 // import AOS from 'aos';
+// import './Testimonials.css'
 
-// const Testimonials = ({ testimonials, setTestimonials }) => {
-//   const [newTestimonial, setNewTestimonial] = useState({
-//     name: '',
-//     rating: 5, // default to 5 stars
-//     text: ''
-//   });
 
-//   const handleInputChange = (e) => {
-//     const { name, value } = e.target;
-//     setNewTestimonial((prev) => ({
-//       ...prev,
-//       [name]: value
-//     }));
-//   };
+// const Testimonials = ({ testimonials }) => {
 
-//   const handleSubmit = () => {
-//     if (newTestimonial.name && newTestimonial.text) {
-//       const newTestimonialObj = {
-//         ...newTestimonial,
-//         id: Date.now() // Use a unique ID based on the timestamp for easy deletion
-//       };
-//       setTestimonials((prev) => [...prev, newTestimonialObj]);
-//       setNewTestimonial({ name: '', rating: 5, text: '' }); // Clear form after submit
-//     } else {
-//       alert('Please fill out all fields.');
-//     }
-//   };
-
-//   const handleDelete = (id) => {
-//     setTestimonials((prev) => prev.filter((testimonial) => testimonial.id !== id));
-//   };
-
-//   useEffect(() => {
+//   useEffect(()=>{
 //     AOS.refresh();
-//   }, []);
+//  },[]);
+
+
+
+
 
 //   return (
 //     <div data-aos="fade-up">
-//       <h3 style={{color:"#ff7b7b"}} className='pb-3 displaytext text-uppercase'>
-//         Customer Testimonials
-//       </h3>
-      
+//       <h3 style={{color:"#ff7b7b"}} className='pb-3 displaytext text-uppercase' >Customer Testimonials</h3>
 //       <Swiper
+        
 //         spaceBetween={20}
 //         loop={true}
 //         autoplay={{
@@ -182,86 +40,216 @@ export default Testimonials;
 //         }}
 //         effect="fade"
 //         breakpoints={{
-//           320: { slidesPerView: 1 },
-//           768: { slidesPerView: 2 },
-//           1024: { slidesPerView: 3 },
+//           // When window width is >= 320px (small mobile devices)
+//           320: {
+//             slidesPerView: 1,  // 1 slide at a time
+//           },
+//           // When window width is >= 768px (tablet)
+//           768: {
+//             slidesPerView: 2,  // Show 2 slides at a time
+//           },
+//           // When window width is >= 1024px (desktop)
+//           1024: {
+//             slidesPerView: 3,  // Show 3 slides at a time
+//           },
 //         }}
 //       >
-//         {testimonials.map((testimonial) => (
-//           <SwiperSlide key={testimonial.id} className='p-4' style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
-//             <p className="displaypara" style={{color:"#c4c4c5"}}>
-//               <FaQuoteLeft size={35} style={{color:"#ff7b7b"}}/> 
-//               {testimonial.text} 
-//               <FaQuoteRight size={35} style={{color:"#ff7b7b"}}/>
+//            {testimonials.map((testimonial, index) => (
+//         <SwiperSlide key={index} className='testimonialsswiper  p-4' style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" }}>
+//           <div className="">
+          
+//             <p className=" displaypara" style={{color:"#c4c4c5"}}><FaQuoteLeft size={35}  style={{color:"#ff7b7b"}}/>  {testimonial.text} <FaQuoteRight size={35}  style={{color:"#ff7b7b"}}/>
 //             </p>
+            
+
+
 //             <div className="row align-items-end">
 //               <div className="col">
-//                 <h4 className="testimonial-name text-white">{testimonial.name}</h4>
-//                 <h6 className="testimonial-name" style={{color:"#ff7b7b"}}>Client</h6>
+//               <h4 className="testimonial-name text-white">{testimonial.author}</h4>
+//               <h6 className="testimonial-name" style={{color:"#ff7b7b"}}>client</h6>
 //               </div>
-//               <div className="col text-end">
-//                 <button
-//                   onClick={() => handleDelete(testimonial.id)}
-//                   className="btn btn-danger"
-//                   style={{ marginTop: "10px" }}
-//                 >
-//                   Delete
-//                 </button>
-//               </div>
+
 //             </div>
-//           </SwiperSlide>
-//         ))}
-//       </Swiper>
 
-//       <h3 style={{color:"#ff7b7b"}} className='pt-5 displaytext text-uppercase'>
-//         Write Testimonials
-//       </h3>
-      
-//       <div className="testimonial-form">
-//         <input
-//           type="text"
-//           name="name"
-//           value={newTestimonial.name}
-//           onChange={handleInputChange}
-//           placeholder="Your Name"
-//           className="form-control mb-3"
-//         />
-        
-//         <textarea
-//           name="text"
-//           value={newTestimonial.text}
-//           onChange={handleInputChange}
-//           placeholder="Your Testimonial"
-//           rows="4"
-//           className="form-control mb-3"
-//         />
+//           </div>
+//         </SwiperSlide>
 
-//         <div className="rating">
-//           <label style={{ color: "#ff7b7b", marginRight: "10px" }}>Rating:</label>
-//           <select
-//             name="rating"
-//             value={newTestimonial.rating}
-//             onChange={handleInputChange}
-//             className="form-control d-inline-block"
-//             style={{ width: "100px" }}
-//           >
-//             {[1, 2, 3, 4, 5].map((star) => (
-//               <option key={star} value={star}>
-//                 {star} Star{star > 1 ? 's' : ''}
-//               </option>
-//             ))}
-//           </select>
-//         </div>
+  
+// ))}
+//       </Swiper> 
+    
 
-//         <button
-//           onClick={handleSubmit}
-//           className="btn btn-primary mt-3"
-//         >
-//           Submit Testimonial
-//         </button>
-//       </div>
+//       <h3 style={{color:"#ff7b7b"}} className='pb-3 displaytext text-uppercase' >Create Testimonials</h3>
+
 //     </div>
 //   );
 // };
 
 // export default Testimonials;
+
+
+
+
+
+
+
+
+import { React, useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'; 
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-fade'; 
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa6';
+import AOS from 'aos';
+import './Testimonials.css';
+
+const Testimonials = ({ testimonials }) => {
+  const [newTestimonial, setNewTestimonial] = useState({
+    name: '',
+    rating: 0,
+    text: '',
+  });
+
+  const [allTestimonials, setAllTestimonials] = useState(testimonials);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add the new testimonial to the list
+    if (newTestimonial.name && newTestimonial.text) {
+      setAllTestimonials([
+        ...allTestimonials,
+        {
+          text: newTestimonial.text,
+          author: newTestimonial.name,
+          rating: newTestimonial.rating,
+        },
+      ]);
+      // Reset form
+      setNewTestimonial({ name: '', rating: 0, text: '' });
+    }
+  };
+
+  const handleDelete = (index) => {
+    const updatedTestimonials = allTestimonials.filter((_, i) => i !== index);
+    setAllTestimonials(updatedTestimonials);
+  };
+
+  return (
+    <div data-aos="fade-up">
+      <h3 style={{ color: '#ff7b7b' }} className='pb-3 displaytext text-uppercase'>
+        Customer Testimonials
+      </h3>
+
+      {/* Swiper for displaying testimonials */}
+      <Swiper
+        spaceBetween={20}
+        loop={true}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        effect="fade"
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
+      >
+        {allTestimonials.map((testimonial, index) => (
+          <SwiperSlide key={index} className='testimonialsswiper p-4' style={{ backgroundColor: '#151515', borderBottom: '5px solid #ff7b7b' }}>
+            <div>
+              <p className="displaypara" style={{ color: '#c4c4c5' }}>
+                <FaQuoteLeft size={35} style={{ color: '#ff7b7b' }} />  
+                {testimonial.text} 
+                <FaQuoteRight size={35} style={{ color: '#ff7b7b' }} />
+              </p>
+              <div className="row align-items-end">
+                <div className="col">
+                  <h5 className="testimonial-name text-white">{testimonial.author}</h5>
+                  <h6 className="testimonial-name" style={{ color: '#ff7b7b' }}>client</h6>
+                </div>
+                <div className="col-auto">
+                  <button 
+                    className="btn btn-danger" 
+                    onClick={() => handleDelete(index)}
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <h3 style={{ color: '#ff7b7b' }} className='py-md-5 py-4 displaytext text-uppercase'>
+        Create Testimonials
+      </h3>
+
+      {/* Testimonial Form for New Reviews */}
+      <form onSubmit={handleSubmit} className="testimonial-form formsform" >
+        <div className="mb-3">
+          <label htmlFor="name" className="form-label text-white">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            className="form-control  formsinput"
+            placeholder="Enter your name"
+            value={newTestimonial.name}
+            onChange={(e) => setNewTestimonial({ ...newTestimonial, name: e.target.value })}
+            required
+          />
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="rating" className="form-label text-white">Rating</label>
+          <select
+            id="rating"
+            className="form-select formsinput"
+            value={newTestimonial.rating}
+            onChange={(e) => setNewTestimonial({ ...newTestimonial, rating: e.target.value })}
+            required
+          >
+            <option value="0">Select Rating</option>
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+          </select>
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="text" className="form-label text-white">Your Testimonial</label>
+          <textarea
+            id="text"
+            className="form-control formsinput"
+            rows="4"
+            placeholder="Write your testimonial here"
+            value={newTestimonial.text}
+            onChange={(e) => setNewTestimonial({ ...newTestimonial, text: e.target.value })}
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" className="btn btn-success">Submit</button>
+      </form>
+    </div>
+  );
+};
+
+export default Testimonials;

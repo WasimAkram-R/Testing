@@ -5,6 +5,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { MdVerifiedUser } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa6";
 import { IoMdStar } from "react-icons/io";
+import { MdFavoriteBorder } from "react-icons/md";
 
 import Search from './Search.jpg'
 import './Search.css'
@@ -70,7 +71,11 @@ const SearchResults = () => {
               </div>
 
               <div className="col-lg-9 col-md-7 py-3 py-md-0">
-                <h3 style={{color:"#ff7b7b"}} onClick={() => handleImageClick(item.content)}><MdVerifiedUser style={{color:"#ff7b7b"}} /> {item.content}</h3>
+
+              <div className='d-flex align-items-center justify-content-between'>
+              <h3 style={{color:"#ff7b7b"}} onClick={() => handleImageClick(item.content)}><MdVerifiedUser style={{color:"#ff7b7b"}} /> {item.content}</h3>
+              <p> <MdFavoriteBorder size={25} style={{color:"#ff7b7b"}}/></p>
+              </div>
 
    
                 <div className='d-flex column-gap-2  pb-2'>
@@ -102,11 +107,7 @@ const SearchResults = () => {
 
 
                
-                {/* <button style={{backgroundColor:"transparent",border:0,boxShadow:"0px 0px 2px #ff7b7b",fontSize:"15px"}} className=" px-2 py-1 rounded-1 text-white " >  <FaWhatsapp size={20} /> {item.number} </button>
-
-<button style={{backgroundColor:"transparent",border:0,boxShadow:"0px 0px 2px #ff7b7b",fontSize:"15px"}} className="  px-2 py-1 rounded-1 text-white " > SEND ENQUIRY </button>
-
-<button style={{backgroundColor:"transparent",border:0,boxShadow:"0px 0px 2px #ff7b7b",fontSize:"15px"}} className="  px-2 py-1 rounded-1 text-white " > CONNECT </button> */}
+                
 
          
 <button
@@ -116,7 +117,7 @@ const SearchResults = () => {
     boxShadow: "0px 0px 2px #ff7b7b",
     fontSize: "15px",
   }}
-  className="px-2 py-1 rounded-1 text-white"
+  className="px-2 py-1 rounded-1 text-white whatsappbutton"
 >
   <FaWhatsapp size={20} /> {item.number}
 </button>
