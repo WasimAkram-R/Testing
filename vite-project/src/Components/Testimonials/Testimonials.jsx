@@ -182,9 +182,9 @@ const Testimonials = ({ testimonials }) => {
                   <h5 className="testimonial-name text-white">{testimonial.author}</h5>
                   <h6 className="testimonial-name" style={{ color: '#ff7b7b' }}>client</h6>
                 </div>
-                <div className="col-auto">
+                <div className="">
                   <button 
-                    className="btn btn-danger" 
+                    className="btn formsbutton text-white" 
                     onClick={() => handleDelete(index)}
                   >
                     Delete
@@ -246,7 +246,7 @@ const Testimonials = ({ testimonials }) => {
           ></textarea>
         </div>
 
-        <button type="submit" className="btn btn-success">Submit</button>
+        <button type="submit" className="btn" style={{backgroundColor:"#ff7b7b",color:"white"}}>Submit</button>
       </form>
     </div>
   );

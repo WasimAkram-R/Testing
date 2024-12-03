@@ -116,27 +116,11 @@
 
    /* testimonialsswiper */
 
-   @media (min-width:768px) {
+
     .testimonialsswiper{
-      min-height: 300px !important; 
+      min-height: 320px !important; 
   
     }
-    
-  } 
-
-  @media (max-width:768px) {
-    .testimonialsswiper{
-      min-height: 250px !important; 
-  
-    }
-    
-  } 
-
-
-
-
-
-
   .testimonial-form {
     background-color: #151515;
     padding: 20px;
