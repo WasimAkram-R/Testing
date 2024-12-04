@@ -131,31 +131,38 @@
 
 /* swiper */
 
-.testimonial-text {
-    max-height: 110px; 
-    overflow: hidden;
-    text-overflow: ellipsis !important;
+
+  
+  /* Responsive styling */
+  @media (max-width: 767px) {
+    .homeswiper {
+      height: 250px !important;
+    }
   }
   
-  .testimonial-text.show-more {
-    max-height: none; 
-    overflow-y: scroll; 
+  @media (min-width: 768px) {
+    .homeswiper {
+      height: 270px !important;
+    }
   }
+  /*  */
+
+.testimonial-text{
+  height: 120px;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+}
+
+
+/*  */
   
-  .show-more-btn {
-    background-color: #ff7b7b;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  /* Style for next and previous buttons */
+
+
 .swiper-button-next, .swiper-button-prev {
     color: #ff7b7b !important;  
   }
   
-  /* If you want to change the hover state as well */
+  
   .swiper-button-next:hover, .swiper-button-prev:hover {
     color: #888 !important; 
     transition: 0.5s;

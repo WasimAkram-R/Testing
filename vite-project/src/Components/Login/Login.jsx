@@ -34,7 +34,7 @@ const Login = () => {
                <div>
                <h6 className='fs-5' style={{color:"#ff7b7b"}} >Login Here</h6>
                
-               <p style={{fontSize:"13px",color:"#c4c4c5"}} >Your personal data will be used to support your experience throughout this website, to manage access to your account.
+               <p style={{fontSize:"13px"}} className='text-white-50'>Your personal data will be used to support your experience throughout this website, to manage access to your account.
 
                </p>
                </div>

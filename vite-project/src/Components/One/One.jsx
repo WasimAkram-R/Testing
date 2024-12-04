@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { IoMdStar } from "react-icons/io";
 import './One.css'
 import { useParams } from 'react-router-dom';  
 import Gallery from '../Gallery/Gallery';  
@@ -90,7 +91,19 @@ const One = () => {
      <img src={tailorData.image} className='img-fluid' alt="" />  
      </div>
      <div className="col-lg-6" data-aos="fade-left">
+
+     <div className='d-flex justify-content-between'>
+
      <h1 className='fs-4 text-uppercase'style={{color:"#ff7b7b"}}>{tailorData.name}</h1>
+     <div className='d-flex column-gap-2  pb-2'>
+     <button    className='border-0 rounded px-1' style={{backgroundColor:"green",color:"white",   display: "flex", 
+justifyContent: "center", 
+alignItems: "center"}}> item.star <IoMdStar/>
+      </button>          <span style={{color:"#c4c4c5"}}>item.ratings Ratings</span> 
+    </div>
+
+    </div> 
+
      <h1 className='py-2 text-white onetext'>{tailorData.description}</h1>
      </div>
    </div>
@@ -118,8 +131,8 @@ const One = () => {
   );
 };
 
-export default One;
 
+export default One;
 
 
 

@@ -17,6 +17,7 @@ const SearchResults = () => {
   const navigate = useNavigate();  // Hook for navigation
 
 
+
   useEffect(() => {
     const allContent = [
       { location: 'Madurai', img:Search, content: 'Peter England', star: '4.5', ratings:'12',address:"ssi, smart city , silaiman-Madurai ",
@@ -31,6 +32,10 @@ const SearchResults = () => {
         star: '4.2', ratings:'21',
         address:"munichalai, Madurai ",
         tags:["Tailors for Women","Alternations","Bridal Tailoring"], number:"888888888" },
+        { location: 'Madurai', img:Search, content: 'Suxus', 
+          star: '4.2', ratings:'21',
+          address:"Anna Nagar, Madurai ",
+          tags:["Tailors for Men","Custom Suits & Shirts","Custom Jeans & Pants"], number:"7777777777" },
     ];
 
     const filtered = allContent.filter(item => item.location.toLowerCase() === location.toLowerCase());
@@ -49,14 +54,17 @@ const SearchResults = () => {
     AOS.refresh();
  },[]);
 
+
+ 
+
   return (
     <>
     
-    <div className="container-fluid py-5 ">
+    <div className="container-fluid pb-5">
      
       <div className='container'>
 
-      <h3 className='pb-5 text-lg-start text-center text-uppercase text-white'>Results for : <span style={{color:"#c4c4c5"}}>{location}</span></h3>
+      <h6 className='py-3 text-lg-start text-center text-uppercase text-white'>Results for : <span style={{color:"#c4c4c5"}}>{location}</span></h6>
 
         {filteredContent.length === 0 ? (
           <p className="text-lg-start text-center text-uppercase " style={{color:"#ff7b7b"}}> No tailors found for : {location}</p>
@@ -64,30 +72,42 @@ const SearchResults = () => {
           filteredContent.map((item, index) => (
             <div className="container">
 
-            <div data-aos="fade-up" className="row  mb-4   py-3 px-1 rounded-3 align-items-center" style={{backgroundColor:"#151515",boxShadow:"0px 0px 2px gray"}} key={index} >
+            <div data-aos="fade-up" className="row  mb-3  py-1 rounded-3 align-items-center" style={{backgroundColor:"#151515",boxShadow:"0px 0px 2px gray"}} key={index} >
 
-              <div className="col-lg-3 col-md-5 d-flex justify-content-center">
+              <div className="col-lg-2 col-md-4 d-flex justify-content-center">
                 <img src={item.img} alt={item.content} className=" img-fluid rounded searchimg" onClick={() => handleImageClick(item.content)} />
               </div>
 
-              <div className="col-lg-9 col-md-7 py-3 py-md-0">
+              <div className="col-lg-10 col-md-8 py-3 py-md-0">
 
-              <div className='d-flex align-items-center justify-content-between'>
-              <h3 style={{color:"#ff7b7b"}} onClick={() => handleImageClick(item.content)}><MdVerifiedUser style={{color:"#ff7b7b"}} /> {item.content}</h3>
-              <p> <MdFavoriteBorder size={25} style={{color:"#ff7b7b"}}/></p>
-              </div>
+              <div className='d-sm-flex  align-items-center  justify-content-between'>
 
-   
-                <div className='d-flex column-gap-2  pb-2'>
+              <h4 style={{color:"#ff7b7b"}} onClick={() => handleImageClick(item.content)}><MdVerifiedUser style={{color:"#ff7b7b"}} /> {item.content}</h4>
+             
+              {/* <p  className='d-sm-none '> <MdFavoriteBorder size={23} style={{color:"#ff7b7b"}}/></p> */}
+
+
+              <div className='d-flex column-gap-2  pb-2'>
                  <button className='border-0 rounded px-1' style={{backgroundColor:"green",color:"white",   display: "flex", 
                justifyContent: "center", 
                alignItems: "center"}}> {item.star} <IoMdStar/>
                </button>          <span style={{color:"#c4c4c5"}}>{item.ratings} Ratings</span> 
                 </div>
+               
+
+              </div>
+
+   
+                {/* <div className='d-flex column-gap-2  pb-2'>
+                 <button className='border-0 rounded px-1' style={{backgroundColor:"green",color:"white",   display: "flex", 
+               justifyContent: "center", 
+               alignItems: "center"}}> {item.star} <IoMdStar/>
+               </button>          <span style={{color:"#c4c4c5"}}>{item.ratings} Ratings</span> 
+                </div> */}
 
 
             {/* <div> */}
-            <p className='' style={{color:"white"}}><CiLocationOn style={{color:"white"}}/> {item.address}
+            <p  className='' style={{color:"white",fontSize:"14px"}}><CiLocationOn style={{color:"white"}}/> {item.address}
             </p>
             {/* </div> */}
                  
@@ -98,7 +118,7 @@ const SearchResults = () => {
                           <button 
                             key={tagIndex} 
                             className="bg-transparent border-0 me-3 mb-3" 
-                            style={{ color: "#c4c4c5", fontSize: "13px",padding:"3px", boxShadow:"0px 0px 2px gray"}}>
+                            style={{ color: "#c4c4c5", fontSize: "12px",padding:"3px", boxShadow:"0px 0px 2px gray"}}>
                             {tag}
                           </button>
                         ))}
@@ -106,16 +126,15 @@ const SearchResults = () => {
                     </div> 
 
 
-               
-                
-
-         
+ <div className='d-flex  justify-content-between'>
+   
+<div>
 <button
   style={{
     backgroundColor: "transparent",
     border: 0,
     boxShadow: "0px 0px 2px #ff7b7b",
-    fontSize: "15px",
+    fontSize: "14px",
   }}
   className="px-2 py-1 rounded-1 text-white whatsappbutton"
 >
@@ -127,7 +146,7 @@ const SearchResults = () => {
     backgroundColor: "transparent",
     border: 0,
     boxShadow: "0px 0px 2px #ff7b7b",
-    fontSize: "15px",
+    fontSize: "14px",
     // Add margin here
   }}
   className="px-2 py-1 rounded-1 text-white enquirybutton"
@@ -140,14 +159,21 @@ const SearchResults = () => {
     backgroundColor: "transparent",
     border: 0,
     boxShadow: "0px 0px 2px #ff7b7b",
-    fontSize: "15px",
+    fontSize: "14px",
   }}
   className="px-2 py-1 rounded-1 text-white"
 >
   CONNECT
-</button>
+</button>  
+</div> 
 
-
+<p  className=''> <MdFavoriteBorder size={23} style={{color:"#ff7b7b"}}/></p>
+  
+  </div>              
+                
+ 
+         
+    
 
               </div>
 

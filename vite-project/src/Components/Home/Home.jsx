@@ -75,10 +75,6 @@ const Home = () => {
 
  
 
-  const glassStyle = {
-    borderRadius: '10px',
-    padding: '15px'
-  };
 
   useEffect(()=>{
      AOS.refresh();
@@ -88,30 +84,29 @@ const Home = () => {
 //swiper
 
 
-  const [showMore1, setShowMore1] = useState(false);
-  const [showMore2, setShowMore2] = useState(false);
-  const [showMore3, setShowMore3] = useState(false);
-  const [showMore4, setShowMore4] = useState(false);
+  // const [showMore1, setShowMore1] = useState(false);
+  // const [showMore2, setShowMore2] = useState(false);
+  // const [showMore3, setShowMore3] = useState(false);
+  // const [showMore4, setShowMore4] = useState(false);
 
-  const handleShowMore = (index) => {
-    switch (index) {
-      case 1:
-        setShowMore1(!showMore1);
-        break;
-      case 2:
-        setShowMore2(!showMore2);
-        break;
-      case 3:
-        setShowMore3(!showMore3);
-        break;
-      case 4:
-        setShowMore4(!showMore4);
-        break;
-      default:
-        break;
-    }
-  };
-
+  // const handleShowMore = (index) => {
+  //   switch (index) {
+  //     case 1:
+  //       setShowMore1(!showMore1);
+  //       break;
+  //     case 2:
+  //       setShowMore2(!showMore2);
+  //       break;
+  //     case 3:
+  //       setShowMore3(!showMore3);
+  //       break;
+  //     case 4:
+  //       setShowMore4(!showMore4);
+  //       break;
+  //     default:
+  //       break;
+  //   }
+  // };
 
 
 
@@ -164,7 +159,7 @@ const Home = () => {
         />
         <button 
           onClick={handleSearch}  // Trigger search and navigate
-          className=" px-sm-4 py-sm-2 px-3 py-1 rounded-5 text-white fw-light homebutton text-uppercase" style={{backgroundColor:"transparent"}}
+          className=" px-sm-4 py-sm-2 px-3 py-1 rounded-5 text-white fw-light  text-uppercase border-0" style={{backgroundColor:"#ff7b7b"}}
         >
           Search
         </button>
@@ -368,7 +363,7 @@ const Home = () => {
 
 
 
-         <Swiper
+          <Swiper
       spaceBetween={20}
       loop={true}
       autoplay={{
@@ -384,20 +379,20 @@ const Home = () => {
       effect="fade"
       breakpoints={{
         320: {
-          slidesPerView: 1,  // 1 slide at a time
+          slidesPerView: 1,  
         },
         768: {
-          slidesPerView: 2,  // Show 2 slides at a time
+          slidesPerView: 2,  
         },
         1024: {
-          slidesPerView: 3,  // Show 3 slides at a time
+          slidesPerView: 3,  
         },
       }}
     >
-      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b",borderRadius:"10px" }}>
+      <SwiperSlide className="p-4 homeswiper" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b",borderRadius:"10px" }}>
         <div className="testimonial">
           <p
-            className={`testimonial-text displaypara ${showMore1 ? 'show-more' : ''}`}
+            className='testimonial-text displaypara '
             style={{ color: "#c4c4c5" }}
           >
             <FaQuoteLeft size={35} style={{ color: "#ff7b7b" }} />
@@ -406,20 +401,18 @@ const Home = () => {
           </p>
           <div className="row align-items-end">
             <div className="col">
-              <h4 className="testimonial-name text-white">Customer 1</h4>
-              <h6 className="testimonial-name" style={{ color: "#ff7b7b" }}>client</h6>
+              <h4 className=" text-white">Customer 1</h4>
+              <h6 className="" style={{ color: "#ff7b7b" }}>client</h6>
             </div>
           </div>
-          <button className="show-more-btn" onClick={() => handleShowMore(1)}>
-            {showMore1 ? 'Show Less' : 'See More'}
-          </button>
+    
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" ,borderRadius:"10px"}}>
+      <SwiperSlide className="p-4 homeswiper" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" ,borderRadius:"10px"}}>
         <div className="testimonial">
           <p
-            className={`testimonial-text displaypara ${showMore2 ? 'show-more' : ''}`}
+            className='testimonial-text displaypara '
             style={{ color: "#c4c4c5" }}
           >
             <FaQuoteLeft size={35} style={{ color: "#ff7b7b" }} />
@@ -428,20 +421,17 @@ const Home = () => {
           </p>
           <div className="row align-items-end">
             <div className="col">
-              <h4 className="testimonial-name text-white">Customer 2</h4>
-              <h6 className="testimonial-name" style={{ color: "#ff7b7b" }}>client</h6>
+              <h4 className=" text-white">Customer 2</h4>
+              <h6 className="" style={{ color: "#ff7b7b" }}>client</h6>
             </div>
           </div>
-          <button className="show-more-btn" onClick={() => handleShowMore(2)}>
-            {showMore2 ? 'Show Less' : 'See More'}
-          </button>
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" ,borderRadius:"10px"}}>
+      <SwiperSlide className="p-4 homeswiper" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b" ,borderRadius:"10px"}}>
         <div className="testimonial">
           <p
-            className={`testimonial-text displaypara ${showMore3 ? 'show-more' : ''}`}
+            className=' displaypara testimonial-text'
             style={{ color: "#c4c4c5" }}
           >
             <FaQuoteLeft size={35} style={{ color: "#ff7b7b" }} />
@@ -450,20 +440,18 @@ const Home = () => {
           </p>
           <div className="row align-items-end">
             <div className="col">
-              <h4 className="testimonial-name text-white">Customer 3</h4>
-              <h6 className="testimonial-name" style={{ color: "#ff7b7b" }}>client</h6>
+              <h4 className=" text-white">Customer 3</h4>
+              <h6 className="" style={{ color: "#ff7b7b" }}>client</h6>
             </div>
           </div>
-          <button className="show-more-btn" onClick={() => handleShowMore(3)}>
-            {showMore3 ? 'Show Less' : 'See More'}
-          </button>
+  
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="p-4" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b",borderRadius:"10px" }}>
+      <SwiperSlide className="p-4 homeswiper" style={{ backgroundColor: "#151515", borderBottom: "5px solid #ff7b7b",borderRadius:"10px" }}>
         <div className="testimonial">
           <p
-            className={`testimonial-text displaypara ${showMore4 ? 'show-more' : ''}`}
+            className='testimonial-text displaypara '
             style={{ color: "#c4c4c5" }}
           >
             <FaQuoteLeft size={35} style={{ color: "#ff7b7b" }} />
@@ -472,16 +460,16 @@ const Home = () => {
           </p>
           <div className="row align-items-end">
             <div className="col">
-              <h4 className="testimonial-name text-white">Customer 4</h4>
-              <h6 className="testimonial-name" style={{ color: "#ff7b7b" }}>client</h6>
+              <h4 className=" text-white">Customer 4</h4>
+              <h6 className="" style={{ color: "#ff7b7b" }}>client</h6>
             </div>
           </div>
-          <button className="show-more-btn" onClick={() => handleShowMore(4)}>
-            {showMore4 ? 'Show Less' : 'See More'}
-          </button>
         </div>
       </SwiperSlide>
-    </Swiper>
+    </Swiper> 
+
+
+
 
 
 </div>
