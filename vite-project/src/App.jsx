@@ -16,6 +16,7 @@ import Policy from './Components/Policy/Policy';
 import Footer from './Components/Footer/Footer';
 
 
+
 function App() {
 
 
@@ -40,6 +41,7 @@ function App() {
     {/* </BrowserRouter> */}
 
      <Footer/>
+     
     </>
   );
 }

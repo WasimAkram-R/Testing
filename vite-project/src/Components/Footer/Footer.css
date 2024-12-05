@@ -6,7 +6,7 @@
     height: 40px;
     width: 40px;
     color:orangered;
-    background-color:white;
+    background-color:var(--secondary-color);
     border-radius: 50%;
     position:absolute;
     top: 25px;
@@ -36,18 +36,18 @@ html {
 
 .footerform .footerinput{
     background-color: black;
-    border: 1px solid #ff7b7b ;
+    border: 1px solid var(--primary-color);
 }
 .footerform .footerinput:focus{
     background-color: black;
-    color: white;
-    border: 1px solid #ff7b7b ;
+    color: var(--secondary-color);
+    border: 1px solid var(--primary-color) ;
 }
 .footerform .footerinput::placeholder{
-    color:#c4c4c5;
+    color:var(--text-color);
 }
 .footerform .footerinput{
-    color: white;
+    color:var(--secondary-color);
   }
   
 
@@ -60,14 +60,14 @@ html {
 .icon-container {
     width: 40px;  
     height: 40px; 
-    border: 1px solid #ff7b7b; 
+    border: 1px solid var(--primary-color); 
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent; 
   }
 .icon-container:hover{
-    background-color: #ff7b7b;
+    background-color: var(--primary-color);
     border: none;
     transition: 0.5s;
 }

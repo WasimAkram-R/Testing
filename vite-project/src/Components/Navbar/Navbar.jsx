@@ -5,6 +5,7 @@ import { IoLogInOutline } from "react-icons/io5";
 import {Link} from 'react-router-dom'
 import './Navbar.css'
 import logo from './T.png'
+import DarkMode from '../DarkMode/DarkMode';
 
 const ResponsiveNavbar = () => {
 
@@ -16,7 +17,7 @@ const ResponsiveNavbar = () => {
   return (
     <> 
 
-<Navbar  expanded={expanded} expand="xl" style={{backgroundColor:"#151515"}} variant="light" sticky="top" className='' >
+<Navbar  expanded={expanded} expand="xl" style={{backgroundColor:"var(--secondary-bg-color)"}} variant="light" sticky="top" className='' >
       <Container>
        <Navbar.Brand className=''>
         <img src={logo} alt="" className='img-fluid width' />
@@ -29,31 +30,40 @@ const ResponsiveNavbar = () => {
           onClick={toggleNavbar} // Toggle function on click
           className="d-xl-none" // Only show on mobile (hidden on large screens)
         >
-       
+         
+         <div className='d-flex align-items-center column-gap-2'>
 
+          <div className=''> 
+          <DarkMode/>
+          </div>
+          
+          <div>
           {expanded ? <div className='icons-container'>
-            <FaTimes className='' style={{color:"#ff7b7b"}} size={24} />
+            <FaTimes className='' style={{color:"var(--primary-color)"}} size={24} />
           </div> : <div className='icons-container' >
-          <FaBars size={24} style={{color:"#ff7b7b"}}  />
+          <FaBars size={24} style={{color:"var(--primary-color)"}}  />
             </div>}
-      
+        
+          </div>
+          
+          </div>
         </Navbar.Toggle>
 
         <Navbar.Collapse  id="navbar-nav" className=" justify-content-center w-100 text-uppercase" >
           <Nav className="mx-auto">
 
-            <Nav.Link > <Link to="/" className=' text-decoration-none text-white a'>Home</Link></Nav.Link>
+            <Nav.Link > <Link to="/" className=' text-decoration-none  a' style={{color:"var(--secondary-color)"}}>Home</Link></Nav.Link>
 
-            <Nav.Link href="#tailors"><Link to="/partner"className='text-decoration-none text-white a'>Partner With Us </Link></Nav.Link>
+            <Nav.Link href="#tailors"><Link to="/partner"className='text-decoration-none  a' style={{color:"var(--secondary-color)"}}>Partner With Us </Link></Nav.Link>
 
-            <Nav.Link><Link to="/aboutus" className='text-decoration-none text-white a'>About Us</Link></Nav.Link> 
+            <Nav.Link><Link to="/aboutus" className='text-decoration-none  a' style={{color:"var(--secondary-color)"}}>About Us</Link></Nav.Link> 
 
             <Nav.Link>
-            <Link to="/contactus"className='text-decoration-none text-white a'>Contact Us</Link>
+            <Link to="/contactus"className='text-decoration-none  a' style={{color:"var(--secondary-color)"}}>Contact Us</Link>
             </Nav.Link>
 
             <Nav.Link>
-            <Link to="/faq"className='text-decoration-none text-white a'>FAQ</Link>
+            <Link to="/faq"className='text-decoration-none  a' style={{color:"var(--secondary-color)"}}>FAQ</Link>
             </Nav.Link> 
             
           </Nav>
@@ -69,26 +79,31 @@ const ResponsiveNavbar = () => {
             
             {/* Laptop */}            
             <Nav.Link>
-            <Link to="/login"className='text-decoration-none text-white a text-uppercase'>
+            <Link to="/login"className='text-decoration-none  a text-uppercase'style={{color:"var(--secondary-color)"}} >
              <div className='d-flex align-items-center'>
-             <IoLogInOutline className='text-white' style={{width:"30px",height:"30px"}} />
+             <IoLogInOutline className='' style={{width:"30px",height:"30px",color:"var(--secondary-color)"}} />
              <span>Login</span>
              </div>
             </Link>
             </Nav.Link> 
           
+          <div>
+          <DarkMode/>
+
+          </div>
           </Nav>
+
 
           {/* mobile */}
           <Nav className="d-flex d-xl-none justify-content-center">
            
 
             <Nav.Link>
-            <Link to="/login"className='text-decoration-none text-white  text-uppercase'>
+            <Link to="/login"className='text-decoration-none   text-uppercase'style={{color:"var(--secondary-color)"}} >
             <div className='d-flex align-items-cente pb-3'>
             <div className='a d-flex align-items-center'>
-            <span className='text-white text-uppercase'>Login</span>
-            <span className=''><IoLogInOutline className='text-white' style={{width:"30px",height:"30px"}} /></span>
+            <span className=' text-uppercase'style={{color:"var(--secondary-color)"}} >Login</span>
+            <span className=''><IoLogInOutline className='' style={{width:"30px",height:"30px",color:"var(--secondary-color)"}} /></span>
             </div>
             </div>
             </Link>

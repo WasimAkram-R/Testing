@@ -10,6 +10,24 @@
   font-style: normal;
 }
 
+:root{
+  --primary-color:#ff7b7b;
+  --secondary-color:white;
+  --text-color:#c4c4c5;
+  --bg-color:#0f0e15;
+  --secondary-bg-color:#151515;
+}
+
+[data-theme="light"]{
+  --primary-color:#d3b367;
+  --secondary-color:#393938;
+  --text-color:#5e5e5e;
+  --bg-color:#ffffff;
+  --secondary-bg-color:#22201c;
+}
+
+
+
 html, body {
   overflow-x: hidden;
   overflow-y: auto;
@@ -24,12 +42,12 @@ img {
 }
 
   body{
-    background-color: #0f0e15 !important;
+    background-color: var(--bg-color) !important;
 } 
 
 
 .formsform .formsinput{
-  background-color: #151515;
+  background-color: var(--secondary-bg-color);
   border: 1px solid gray;
 }
 .formsform .formsinput:focus{

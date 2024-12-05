@@ -16,7 +16,7 @@
   }
   
   .homeform::placeholder{
-    color: white !important;
+    color: var(--secondary-color) !important;
   }
 
   @media (max-width:576px){
@@ -28,20 +28,20 @@
   .homeform:focus{
     outline: none !important;  
     box-shadow: none !important;
-    border: 1px solid white !important;
+    border: 1px solid  var(--secondary-color) !important;
   }
   .homeform{
     color: white !important;
-    border: 1px solid white !important;
+    border: 1px solid  var(--secondary-color) !important;
   }
 
   .homebutton{
-    border: 1px solid #ff7b7b !important;
+    border: 1px solid  var(--primary-color) !important;
     color: white;
-    background-color: #ff7b7b;
+    background-color: var(--primary-color);
   }
   .homebutton:hover{
-  background-color: #ff7b7b !important;
+  background-color: var(--primary-color) !important;
   transition: 0.5s !important;
   }
 
@@ -159,12 +159,12 @@
 
 
 .swiper-button-next, .swiper-button-prev {
-    color: #ff7b7b !important;  
+    color: var(--primary-color)!important;  
   }
   
   
   .swiper-button-next:hover, .swiper-button-prev:hover {
-    color: #888 !important; 
+    color: var(--text-color) !important; 
     transition: 0.5s;
 }
 

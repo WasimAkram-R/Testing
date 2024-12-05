@@ -10,28 +10,28 @@ const Footer = () => {
 
 
   return (
-    <div className="container-fluid uppercontainer " id="scrollTarget"  style={{backgroundColor:"#151515"}}>
+    <div className="container-fluid uppercontainer " id="scrollTarget"  style={{backgroundColor:"var(--secondary-bg-color)"}}>
     <div className="container">
        <div className="row py-4 row-gap-4">
          <div className="col-md-6">
 
-         <div className='text-white d-flex gap-3'>
+         <div className=' d-flex gap-3' style={{color: "var(--secondary-color)"}} >
 
       {/* Facebook Icon with Square Border */}
       <div className='icon-container'>
-        < FaFacebookF style={{ width: "24px", height: "24px", color: "white" }} />
-      </div>
+        < FaFacebookF style={{ width: "24px", height: "24px", color: "var(--secondary-color)" }} />
+      </div>  
 
       {/* WhatsApp Icon with Square Border */}
       <div className='icon-container'>
-        <IoLogoWhatsapp style={{ width: "24px", height: "24px", color: "white" }} />
+        <IoLogoWhatsapp style={{ width: "24px", height: "24px", color: "var(--secondary-color)" }} />
       </div>
     </div>
      
       <div className=''>
-      <p className='pt-3 text-white' style={{fontSize:"14px"}}>Copyright @ 2024 <span className='fw-medium'>TailorsHub.</span> All rights reserved.</p>
-         <button  onClick={() => navigate('/terms')} className='bg-transparent border-0 text-decoration-underline' style={{fontSize:"14px",color:"#c4c4c5"}}>Terms And Conditions</button><br />
-         <button  onClick={() => navigate('/policy')} className='bg-transparent border-0 text-decoration-underline' style={{fontSize:"14px",color:"#c4c4c5"}}>Privacy And Policy</button>
+      <p className='pt-3 '  style={{fontSize:"14px",color: "var(--secondary-color)" }}>Copyright @ 2024 <span className='fw-medium'>TailorsHub.</span> All rights reserved.</p>
+         <button  onClick={() => navigate('/terms')} className='bg-transparent border-0 text-decoration-underline' style={{fontSize:"14px",color:"var(--text-color"}}>Terms And Conditions</button><br />
+         <button  onClick={() => navigate('/policy')} className='bg-transparent border-0 text-decoration-underline' style={{fontSize:"14px",color:"var(--text-color"}}>Privacy And Policy</button>
          </div>
       </div>
 
@@ -45,9 +45,9 @@ const Footer = () => {
                <button type="submit" className='px-4 py-2 rounded-1 border-0 text-uppercase' style={{backgroundColor:"#ff7b7b",color:"white"}}>Submit</button>
                </div>
             </form> */}
-            <h6 className='text-white'>EMAIL : <span style={{color:"#c4c4c5"}}>abc@gmail.com</span></h6>
-            <h6 className='text-white py-1'>NUMBER : <span style={{color:"#c4c4c5"}}>XXXXXXXXXX</span></h6>
-            <h6 className='text-white'>ADDRESS : <span style={{color:"#c4c4c5"}}>Silaiman,Madurai</span></h6>
+            <h6 className=''style={{color:"var(--secondary-color"}}>EMAIL : <span style={{color:"var(--text-color"}}>abc@gmail.com</span></h6>
+            <h6 className=' py-1'style={{color:"var(--secondary-color"}}>NUMBER : <span style={{color:"var(--text-color"}}>XXXXXXXXXX</span></h6>
+            <h6 className=''style={{color:"var(--secondary-color"}}>ADDRESS : <span style={{color:"var(--text-color"}}>Silaiman,Madurai</span></h6>
          </div>
 
        </div>
