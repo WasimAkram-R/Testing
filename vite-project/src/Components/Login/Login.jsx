@@ -21,20 +21,20 @@ const Login = () => {
          
         {/* Login Here */}
 
-         <div className="col-md-5 col-10 p-4"style={{backgroundColor:"#151515"}} >
+         <div className="col-md-5 col-10 p-4"style={{backgroundColor:"var(--secondary-bg-color)"}} >
 
            <form action=""className='formsform' >
 
            <div className='d-flex'>
                
                <div className='d-flex align-items-center'>
-               <LiaUserLockSolid className='me-4' style={{width:"30px",height:"30px",color:"white" }}/>
+               <LiaUserLockSolid className='me-4' style={{width:"30px",height:"30px",color:"var(--secondary-color)" }}/>
                </div>
                  
                <div>
-               <h6 className='fs-5' style={{color:"#ff7b7b"}} >Login Here</h6>
+               <h6 className='fs-5' style={{color:"var(--primary-color)"}} >Login Here</h6>
                
-               <p style={{fontSize:"13px"}} className='text-white-50'>Your personal data will be used to support your experience throughout this website, to manage access to your account.
+               <p style={{fontSize:"13px",color:"var(--secondary-color)"}}>Your personal data will be used to support your experience throughout this website, to manage access to your account.
 
                </p>
                </div>
@@ -55,11 +55,11 @@ const Login = () => {
              
 
            <div className='my-3'>
-              <p style={{color:"white"}}>Forget Password?</p>
+              <p style={{color:"var(--secondary-color)"}}>Forget Password?</p>
            </div>
 
            <div>
-             <button type='submit' className='rounded-3 loginbuttons text-white  p-3 formsbutton w-100'>Login Now <IoIosArrowRoundForward style={{width:"30px",height:"30px",color:"white" }}/></button>
+             <button type='submit' className='rounded-3 loginbuttons   p-3 formsbutton w-100' style={{color:"var(--secondary-color)"}}>Login Now <IoIosArrowRoundForward style={{width:"30px",height:"30px",color:"var(--secondary-color)" }}/></button>
            </div>
 
            </form>

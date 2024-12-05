@@ -24,12 +24,12 @@ const Gallery = ({ tailorName }) => {
 
   return (
     <div className='py-4'>
-      <h3 style={{color:"#ff7b7b"}} className='pb-4 displaytext text-uppercase'>Gallery</h3>
+      <h3 style={{color:"var(--primary-color)"}} className='pb-4 displaytext text-uppercase'>Gallery</h3>
 
       {/* Row 1: Traditional Outfits */}
       {tailorName === 'Peter England' && (
         <div>
-          <h5 className='pb-2' style={{color:"white"}}>Traditional Outfits</h5>
+          <h5 className='pb-2' style={{color:"var(--secondary-color)"}}>Traditional Outfits</h5>
           <div className="row row-gap-5" data-aos="fade-up">
             {galleryImages[tailorName]['Traditional Outfits'].map((img, index) => (
               <div className="col-md-4"  key={index}>
@@ -43,7 +43,7 @@ const Gallery = ({ tailorName }) => {
       {/* Row 2: Wedding Wear */}
       {tailorName === 'Peter England' && (
         <div className='pt-5'>
-          <h5 className='pb-2' style={{color:"white"}}>Wedding Wear</h5>
+          <h5 className='pb-2' style={{color:"var(--secondary-color)"}}>Wedding Wear</h5>
           <div className="row row-gap-5" data-aos="fade-up">
             {galleryImages[tailorName]['Wedding Wear'].map((img, index) => (
               <div className="col-md-4" key={index}>
@@ -57,7 +57,7 @@ const Gallery = ({ tailorName }) => {
       {/* Row 3: Casual Wear */}
       {tailorName === 'Peter England' && (
         <div className='py-5'>
-          <h5 className='pb-2' style={{color:"white"}}>Casual Wear</h5>
+          <h5 className='pb-2' style={{color:"var(--secondary-color)"}}>Casual Wear</h5>
           <div className="row row-gap-5" data-aos="fade-up">
             {galleryImages[tailorName]['Casual Wear'].map((img, index) => (
               <div className="col-md-4" key={index}>

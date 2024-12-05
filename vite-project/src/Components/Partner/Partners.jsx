@@ -64,8 +64,8 @@ const Partners = () => {
      <img src={partnerimg1} className='img-fluid ' alt="" />  
      </div>
      <div className="col-lg-6" data-aos="fade-left">
-     <h1 className='fs-4'style={{color:"#ff7b7b"}}>PARTNER WITH US!</h1>
-     <h1 className='py-2 text-white partnertext'>Connect Your Tailoring Business with TailorsHub</h1>
+     <h1 className='fs-4'style={{color:"var(--primary-color)"}}>PARTNER WITH US!</h1>
+     <h1 className='py-2  partnertext' style={{color:"var(--secondary-color)"}}>Connect Your Tailoring Business with TailorsHub</h1>
      </div>
    </div>
    </div>
@@ -102,42 +102,42 @@ const Partners = () => {
         }}
       >
 
-<SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "#151515", borderTop: "5px solid #ff7b7b" }}>
+<SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "var(--secondary-bg-color)", borderTop: "5px solid var(--primary-color)" }}>
           <div className="testimonial">
-          <h6 className='text-white displaypara'>1. Partner with Us</h6>
-            <p className="displaypara" style={{color:"#c4c4c5"}}>
+          <h6 className=' displaypara' style={{color:"var(--secondary-color)"}}>1. Partner with Us</h6>
+            <p className="displaypara" style={{color:" var(--text-color)"}}>
             Join our platform to showcase your tailoring skills to a wider audience.
             </p>
             
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "#151515", borderTop: "5px solid #ff7b7b" }}>
+        <SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "var(--secondary-bg-color)", borderTop: "5px solid var(--primary-color)" }}>
           <div className="testimonial ">
-          <h6  className='text-white displaypara'>2. Customers Finds You</h6>
-            <p style={{color:"#c4c4c5"}}className=" displaypara">
+          <h6  className=' displaypara' style={{color:"var(--secondary-color)"}}>2. Customers Finds You</h6>
+            <p style={{color:" var(--text-color)"}}className=" displaypara">
             Customers easily find tailors based on  their needs.
             </p>
 
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "#151515", borderTop: "5px solid #ff7b7b" }}>
+        <SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "var(--secondary-bg-color)", borderTop: "5px solid var(--primary-color)" }}>
           <div className="testimonial">
-          <h6 className='text-white displaypara'>3. Expand Your Business</h6>
-            <p className=" displaypara" style={{color:"#c4c4c5"}}>
+          <h6 className=' displaypara' style={{color:"var(--secondary-color)"}}>3. Expand Your Business</h6>
+            <p className=" displaypara" style={{color:" var(--text-color)"}}>
             Get access to more customers and grow your tailoring business seamlessly.
             </p>
             
           </div>
         </SwiperSlide>
 
-        
+       
          
-        <SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "#151515", borderTop: "5px solid #ff7b7b" }}>
+        <SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "var(--secondary-bg-color)", borderTop: "5px solid var(--primary-color)" }}>
           <div className="testimonial">
-          <h6 className='text-white displaypara'>4. Boost Your Earnings</h6>
-            <p className=" displaypara" style={{color:"#c4c4c5"}}>
+          <h6 className=' displaypara' style={{color:"var(--secondary-color)"}}>4. Boost Your Earnings</h6>
+            <p className=" displaypara" style={{color:" var(--text-color)"}}>
              Earn more by partnering with us and tapping into our vast network of clients.
             </p>
             
@@ -148,7 +148,7 @@ const Partners = () => {
       </Swiper>
     </div>
    
-       
+    
 
 
   <div className="container py-md-5 py-3">
@@ -157,12 +157,12 @@ const Partners = () => {
     <div className="row row-gap-md-5 row-gap-4">
      <div className='col-lg-6'data-aos="fade-right">
       <div className=' ' >
-      <h3 className="pb-2 text-uppercase displaytext" style={{color:"#ff7b7b"}}>About TailorsHub:</h3>
-      <p style={{color:"#c4c4c5"}} className='displaypara' >Are you a tailor looking to showcase your skills to a wider audience? At TailorsHub, we offer an exclusive platform for talented tailors like you to connect with potential clients online. Our website helps you create a strong online presence and attract more customers.</p>
+      <h3 className="pb-2 text-uppercase displaytext" style={{color:"var(--primary-color)"}}>About TailorsHub:</h3>
+      <p style={{color:"var(--text-color)"}} className='displaypara' >Are you a tailor looking to showcase your skills to a wider audience? At TailorsHub, we offer an exclusive platform for talented tailors like you to connect with potential clients online. Our website helps you create a strong online presence and attract more customers.</p>
       </div>
      </div>
      <div className="col-lg-6" data-aos="fade-left">
-        <img src={partnerimg2} className='img-fluid  w-100 h-100' alt="" style={{border:"4px solid #ff7b7b"}}/>
+        <img src={partnerimg2} className='img-fluid  w-100 h-100' alt="" style={{border:"4px solid var(--primary-color)"}}/>
      </div>
     </div>
 
@@ -176,17 +176,17 @@ const Partners = () => {
     {/* Benefits for Tailors Section */}
     <div className="row row-gap-md-5 row-gap-4 ">
       <div className="col-lg-6 order-lg-first order-last"data-aos="fade-right">
-      <img src={partnerimg2} className='img-fluid  w-100 h-100' alt=""style={{border:"4px solid #ff7b7b"}} />
+      <img src={partnerimg2} className='img-fluid  w-100 h-100' alt=""style={{border:"4px solid var(--primary-color)"}} />
       </div>
       <div className="col-lg-6"data-aos="fade-left">
-      <h3 className="pb-2 text-uppercase  displaytext"style={{color:"#ff7b7b"}}>Benefits For Tailors:</h3>
+      <h3 className="pb-2 text-uppercase  displaytext"style={{color:"var(--primary-color)"}}>Benefits For Tailors:</h3>
       <div className="col displaypara">
         <ul className="list-unstyled">
-          <li><span className="text-white"><SiCodesignal style={{color:"#ff7b7b"}}/> Showcase Your Design:</span> <span className=''style={{color:"#c4c4c5"}}>Display your best designs and creations to a growing audience.</span></li>
-          <li className="my-2"><span className=" text-white"><MdOutlineVisibility style={{color:"#ff7b7b"}}/> Gain Visibility:</span><span className=''style={{color:"#c4c4c5"}}> Reach customers in your locality and beyond.</span> </li>
-          <li><span className=" text-white"><MdOutlinePhone style={{color:"#ff7b7b"}}/> Easy Communication:</span> <span className=''style={{color:"#c4c4c5"}}>Receive inquiries and collaborate with clients effortlessly.</span></li>
-          <li className="my-2"><span className=" text-white"><TbBusinessplan  style={{color:"#ff7b7b"}} />  Business Growth:</span> <span className=''style={{color:"#c4c4c5"}}> Increase your customer base and grow your revenue.</span></li>
-          <li><span className="text-white"><CgWebsite style={{color:"#ff7b7b"}}/> Custom Websites:</span> <span className=''style={{color:"#c4c4c5"}}>Designed specifically to highlight your skills and services.</span></li>
+          <li><span className=""style={{color:"var(--secondary-color)"}}><SiCodesignal style={{color:"var(--primary-color)"}}/> Showcase Your Design:</span> <span className=''style={{color:"var(--text-color)"}}>Display your best designs and creations to a growing audience.</span></li>
+          <li className="my-2"><span className=" "style={{color:"var(--secondary-color)"}}><MdOutlineVisibility style={{color:"var(--primary-color)"}}/> Gain Visibility:</span><span className=''style={{color:"var(--text-color)"}}> Reach customers in your locality and beyond.</span> </li>
+          <li><span className=" "style={{color:"var(--secondary-color)"}}><MdOutlinePhone style={{color:"var(--primary-color)"}}/> Easy Communication:</span> <span className=''style={{color:"var(--text-color)"}}>Receive inquiries and collaborate with clients effortlessly.</span></li>
+          <li className="my-2"><span className=" "style={{color:"var(--secondary-color)"}}><TbBusinessplan  style={{color:"var(--primary-color)"}} />  Business Growth:</span> <span className=''style={{color:"var(--text-color)"}}> Increase your customer base and grow your revenue.</span></li>
+          <li><span className=""style={{color:"var(--secondary-color)"}}><CgWebsite style={{color:"var(--primary-color)"}}/> Custom Websites:</span> <span className=''style={{color:"var(--text-color)"}}>Designed specifically to highlight your skills and services.</span></li>
         </ul>
       </div>
       </div>
@@ -199,18 +199,18 @@ const Partners = () => {
     {/* Why Partner With Us Section */}
     <div className="row row-gap-md-5 row-gap-4 ">
        <div className="col-lg-6" data-aos="fade-right">
-       <h3 className="pb-2 text-uppercase  displaytext"style={{color:"#ff7b7b"}}>Why Partner With Us?</h3>
+       <h3 className="pb-2 text-uppercase  displaytext"style={{color:"var(--primary-color)"}}>Why Partner With Us?</h3>
       <div className="col displaypara">
         <ul className="list-unstyled">
-          <li><span className="text-white"><LiaUserFriendsSolid style={{color:"#ff7b7b"}}/> User-Friendly Interface:</span> <span className=''style={{color:"#c4c4c5"}}> An easy-to-use platform tailored to your needs.</span></li>
-          <li className="my-2"><span className="text-white"><MdSupportAgent style={{color:"#ff7b7b"}}/> Marketing Support:</span> <span className=''style={{color:"#c4c4c5"}}>Promote your services through targeted campaigns.</span></li>
-          <li><span className="text-white"><IoPeopleOutline style={{color:"#ff7b7b"}}/> Tailor-First Focus:</span> <span className=''style={{color:"#c4c4c5"}}>Dedicated features for tailor showcase and customer reviews.</span></li>
-          <li className="mt-2"><span className="text-white"><IoNewspaperOutline style={{color:"#ff7b7b"}}/> Take Orders:</span> <span className=''style={{color:"#c4c4c5"}}>Get a professional platform to display your work and take orders.</span></li>
+          <li><span className=""style={{color:"var(--secondary-color)"}}><LiaUserFriendsSolid style={{color:"var(--primary-color)"}}/> User-Friendly Interface:</span> <span className=''style={{color:"var(--text-color)"}}> An easy-to-use platform tailored to your needs.</span></li>
+          <li className="my-2"><span className=""style={{color:"var(--secondary-color)"}}><MdSupportAgent style={{color:"var(--primary-color)"}}/> Marketing Support:</span> <span className=''style={{color:"var(--text-color)"}}>Promote your services through targeted campaigns.</span></li>
+          <li><span className=""style={{color:"var(--secondary-color)"}}><IoPeopleOutline style={{color:"var(--primary-color)"}}/> Tailor-First Focus:</span> <span className=''style={{color:"var(--text-color)"}}>Dedicated features for tailor showcase and customer reviews.</span></li>
+          <li className="mt-2"><span className=""style={{color:"var(--secondary-color)"}}><IoNewspaperOutline style={{color:"var(--primary-color)"}}/> Take Orders:</span> <span className=''style={{color:"var(--text-color)"}}>Get a professional platform to display your work and take orders.</span></li>
         </ul>
       </div>
        </div>
        <div className="col-lg-6" data-aos="fade-left">
-       <img src={partnerimg2} className='img-fluid  w-100 h-100' style={{border:"4px solid #ff7b7b"}}alt="" />
+       <img src={partnerimg2} className='img-fluid  w-100 h-100' style={{border:"4px solid var(--primary-color)"}}alt="" />
        </div>
     </div>
     </div>
@@ -222,16 +222,16 @@ const Partners = () => {
     {/* How It Works Section */}
     <div className="row row-gap-md-5 row-gap-4 ">
       <div className="col-lg-6  order-lg-first order-last"data-aos="fade-right">
-      <img src={partnerimg2} className='img-fluid  w-100 h-100' alt=""style={{border:"4px solid #ff7b7b"}} />
+      <img src={partnerimg2} className='img-fluid  w-100 h-100' alt=""style={{border:"4px solid var(--primary-color)"}} />
       </div>
       <div className="col-lg-6"data-aos="fade-left">
-      <h3 className="pb-2 displaytext text-uppercase "style={{color:"#ff7b7b"}}>How It Works:</h3>
+      <h3 className="pb-2 displaytext text-uppercase "style={{color:"var(--primary-color)"}}>How It Works:</h3>
       <div className="col displaypara">
         <ul className="list-unstyled">
-          <li><span className="text-white">< CgProfile style={{color:"#ff7b7b"}} /> Tailors Profiles:</span> <span className=''style={{color:"#c4c4c5"}}>Tailors login and share their needs for an online presence to TailorsHub platform.</span></li>
-          <li className="my-2"><span className="text-white"><CgWebsite style={{color:"#ff7b7b"}} /> Website Owners:</span> <span className=''style={{color:"#c4c4c5"}}>Explore tailor profiles and pitch your services.</span></li>
-          <li><span className="text-white"><RiShakeHandsLine style={{color:"#ff7b7b"}} /> Collaborate:</span> <span className=''style={{color:"#c4c4c5"}}>Create custom websites that align with the tailor's vision and business goals.</span></li>
-          <li className="mt-2"><span className="text-white"><MdOutlineVisibility style={{color:"#ff7b7b"}}/> Gain Visibility:</span> <span className=''style={{color:"#c4c4c5"}}>Reach customers in your locality and beyond, and take orders.</span></li>
+          <li><span className=""style={{color:"var(--secondary-color)"}}>< CgProfile style={{color:"var(--primary-color)"}} /> Tailors Profiles:</span> <span className=''style={{color:"var(--text-color)"}}>Tailors login and share their needs for an online presence to TailorsHub platform.</span></li>
+          <li className="my-2"><span className=""style={{color:"var(--secondary-color)"}}><CgWebsite style={{color:"var(--primary-color)"}} /> Website Owners:</span> <span className=''style={{color:"var(--text-color)"}}>Explore tailor profiles and pitch your services.</span></li>
+          <li><span className=""style={{color:"var(--secondary-color)"}}><RiShakeHandsLine style={{color:"var(--primary-color)"}} /> Collaborate:</span> <span className=''style={{color:"var(--text-color)"}}>Create custom websites that align with the tailor's vision and business goals.</span></li>
+          <li className="mt-2"><span className=""style={{color:"var(--secondary-color)"}}><MdOutlineVisibility style={{color:"var(--primary-color)"}}/> Gain Visibility:</span> <span className=''style={{color:"var(--text-color)"}}>Reach customers in your locality and beyond, and take orders.</span></li>
         </ul>
       </div>
       </div>
@@ -245,9 +245,9 @@ const Partners = () => {
     <div className="row row-gap-md-5 row-gap-4  align-items-center">
       {/* Left Column: Call to Action */}
       <div className="col-lg-6"data-aos="fade-right">
-        <h3 className="pb-2 displaytext text-uppercase " style={{color:"#ff7b7b"}}>Contact Us</h3>
-        <p className="pb-3 displaypara" style={{color:"#c4c4c5"}}>Ready to collaborate with TailorsHub?</p>
-        <button className=" px-4 py-2 rounded-5 text-uppercase formsbutton"style={{backgroundColor:"transparent",color:"white"}}
+        <h3 className="pb-2 displaytext text-uppercase " style={{color:"var(--primary-color)"}}>Contact Us</h3>
+        <p className="pb-3 displaypara" style={{color:"var(--text-color)"}}>Ready to collaborate with TailorsHub?</p>
+        <button className=" px-4 py-2 rounded-5 text-uppercase formsbutton"style={{backgroundColor:"transparent",color:"var(--secondary-color)"}}
         onClick={handleGetStartedClick}>Get Started</button>
       </div>
 
@@ -271,7 +271,7 @@ const Partners = () => {
           </div>
 
           <div className="d-flex justify-content-center">
-            <button type="submit" className="border-0 text-uppercase px-4 py-2 rounded " style={{backgroundColor:"#ff7b7b",color:"white"}}>Submit</button>
+            <button type="submit" className="border-0 text-uppercase px-4 py-2 rounded " style={{backgroundColor:"var(--primary-color)",color:"var(--secondary-color)"}}>Submit</button>
           </div>
         </form>
       </div>

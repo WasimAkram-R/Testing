@@ -52,24 +52,24 @@ img {
 }
 .formsform .formsinput:focus{
   background-color: black;
-  color: white;
+  color: var(--secondary-color);
   border: 1px solid gray;
 }
 .formsform .formsinput::placeholder{
-  color:#c4c4c5;
+  color:var(--text-color);
 }
 .formsform .formsinput{
-  color: white;
+  color: var(--secondary-color);
 }
 
 
 .formsbutton{
-  border: 1px solid #ff7b7b !important;
-  color: white;
-  background-color: #ff7b7b;
+  border: 1px solid var(--primary-color) !important;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 .formsbutton:hover{
-background-color: #ff7b7b !important;
+background-color: var(--primary-color) !important;
 transition: 0.5s !important;
 }
 

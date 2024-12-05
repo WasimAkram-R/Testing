@@ -14,13 +14,13 @@ const About = ({about}) => {
 
      <div className='py-4' data-aos="fade-up">
 
-     <h3 style={{color:"#ff7b7b"}} className='text-uppercase displaytext'>About</h3>
+     <h3 style={{color:"var(--primary-color)"}} className='text-uppercase displaytext'>About</h3>
 
  
         
 {about.map((aboutus, index) => (
 
-      <p key={index} style={{color:"#c4c4c5"}} className='displaypara' >{aboutus}</p>
+      <p key={index} style={{color:"var(--text-color)"}} className='displaypara' >{aboutus}</p>
  
   ))} 
 
@@ -30,4 +30,5 @@ const About = ({about}) => {
   )
 }
 
-export default About
+export default About 
+

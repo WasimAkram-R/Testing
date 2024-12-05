@@ -144,15 +144,15 @@ const Testimonials = ({ testimonials }) => {
   return (
     <div data-aos="fade-up">
    
-
-      <h4 style={{ color: '#ff7b7b' }} className='pb-4  text-uppercase'>
+   
+      <h4 style={{ color: 'var(--primary-color)' }} className='pb-4  text-uppercase'>
         Create Testimonials
       </h4>
 
       {/* Testimonial Form for New Reviews */}
       <form onSubmit={handleSubmit} className="testimonial-form formsform" >
         <div className="mb-3">
-          <label htmlFor="name" className="form-label text-white">Your Name</label>
+          <label htmlFor="name" className="form-label "style={{ color: 'var(--secondary-color)' }}>Your Name</label>
           <input
             type="text"
             id="name"
@@ -165,7 +165,7 @@ const Testimonials = ({ testimonials }) => {
         </div>
 
         <div className="mb-3">
-          <label htmlFor="rating" className="form-label text-white">Rating</label>
+          <label htmlFor="rating" className="form-label "style={{ color: 'var(--secondary-color)' }}>Rating</label>
           <select
             id="rating"
             className="form-select formsinput"
@@ -173,7 +173,7 @@ const Testimonials = ({ testimonials }) => {
             onChange={(e) => setNewTestimonial({ ...newTestimonial, rating: e.target.value })}
             required
           >
-            <option value="0">Select Rating</option>
+            <option value="0" className=''>Select Rating</option>
             <option value="1">1 Star</option>
             <option value="2">2 Stars</option>
             <option value="3">3 Stars</option>
@@ -183,7 +183,7 @@ const Testimonials = ({ testimonials }) => {
         </div>
 
         <div className="mb-3">
-          <label htmlFor="text" className="form-label text-white">Your Testimonial</label>
+          <label htmlFor="text" className="form-label "style={{ color: 'var(--secondary-color)' }}>Your Testimonial</label>
           <textarea
             id="text"
             className="form-control formsinput"
@@ -195,12 +195,12 @@ const Testimonials = ({ testimonials }) => {
           ></textarea>
         </div>
 
-        <button type="submit" className="btn" style={{backgroundColor:"#ff7b7b",color:"white"}}>Submit</button>
+        <button type="submit" className="btn" style={{backgroundColor:"var(--primary-color)",color:"var(--secondary-color)"}}>Submit</button>
       </form>
 
 
 
-      <h3 style={{ color: '#ff7b7b' }} className='py-md-5 py-4 displaytext text-uppercase'>
+      <h3 style={{ color: 'var(--primary-color)' }} className='py-md-5 py-4 displaytext text-uppercase'>
         Customer Testimonials
       </h3>
 
@@ -336,8 +336,8 @@ const Testimonials = ({ testimonials }) => {
             <div
               className="testimonialsswiper p-4"
               style={{
-                backgroundColor: '#151515',
-                borderBottom: '5px solid #ff7b7b',
+                backgroundColor: 'var(--secondary-bg-color)',
+                borderBottom: '5px solid var(--primary-color)',
                 padding: '20px', // Ensures padding is there for mobile/desktop responsiveness
                 display: 'flex', // Centers the content vertically and horizontally
                 flexDirection: 'column', 
@@ -349,10 +349,10 @@ const Testimonials = ({ testimonials }) => {
                   <div className="col">
                     <div className="d-flex align-items-center column-gap-4">
                       <img src="https://placehold.co/60" className='rounded-circle' alt="" />
-                     <h5 className="testimonial-name text-white">{testimonial.author}</h5>
+                     <h5 className="testimonial-name " style={{color:"var(--secondary-color)"}}>{testimonial.author}</h5>
                     </div>
                   </div>
-                    <h5 className="pt-3" style={{color:"#ff7b7b"}} ><CiStar /><CiStar /><CiStar /><CiStar /><CiStar /></h5>
+                    <h5 className="pt-3" style={{color:"var(--primary-color)"}} ><CiStar /><CiStar /><CiStar /><CiStar /><CiStar /></h5>
                   {/* <div>
                     <Button
                       variant="danger"
@@ -363,7 +363,7 @@ const Testimonials = ({ testimonials }) => {
                     </Button>
                   </div> */}
                 </div>
-                <p className="displaypara" style={{ color: '#c4c4c5' }}>
+                <p className="displaypara" style={{ color: 'var(--text-color)' }}>
                   {/* <FaQuoteLeft size={35} style={{ color: '#ff7b7b' }} /> */}
                   {testimonial.text}
                   {/* <FaQuoteRight size={35} style={{ color: '#ff7b7b' }} /> */}

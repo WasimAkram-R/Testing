@@ -83,7 +83,7 @@ const One = () => {
       {tailorData ? (
         
         <div className="container">        
-    
+
 
     <div className="row align-items-center row-gap-md-5 row-gap-4">
 
@@ -94,17 +94,17 @@ const One = () => {
 
      <div className='d-flex justify-content-between'>
 
-     <h1 className='fs-4 text-uppercase'style={{color:"#ff7b7b"}}>{tailorData.name}</h1>
+     <h1 className='fs-4 text-uppercase'style={{color:"var(--primary-color)"}}>{tailorData.name}</h1>
      <div className='d-flex column-gap-2  pb-2'>
      <button    className='border-0 rounded px-1' style={{backgroundColor:"green",color:"white",   display: "flex", 
 justifyContent: "center", 
 alignItems: "center"}}> item.star <IoMdStar/>
-      </button>          <span style={{color:"#c4c4c5"}}>item.ratings Ratings</span> 
+      </button>          <span style={{color:"var(--text-color)"}}>item.ratings Ratings</span> 
     </div>
 
     </div> 
 
-     <h1 className='py-2 text-white onetext'>{tailorData.description}</h1>
+     <h1 className='py-2  onetext'style={{color:"var(--secondary-color)"}}>{tailorData.description}</h1>
      </div>
    </div>
 
@@ -117,13 +117,13 @@ alignItems: "center"}}> item.star <IoMdStar/>
           {tailorData.testimonials && tailorData.testimonials.length > 0 ? (
             <Testimonials testimonials={tailorData.testimonials} />
           ) : (
-            <h1 className='fs-4 text-uppercase'style={{color:"#ff7b7b"}}>No testimonials available for this tailor.</h1> 
+            <h1 className='fs-4 text-uppercase'style={{color:"var(--primary-color)"}}>No testimonials available for this tailor.</h1> 
           )}
 
         </div>
 
       ) : (
-        <h1 className='fs-4 text-uppercase'style={{color:"#ff7b7b"}}>Loading...</h1>
+        <h1 className='fs-4 text-uppercase'style={{color:"var(--primary-color)"}}>Loading...</h1>
       )}
     </div>
 

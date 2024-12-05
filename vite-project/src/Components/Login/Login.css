@@ -6,7 +6,7 @@
     top:50%;
     left: 10px;
     transform: translateY(-50%);
-    color: #c4c4c5;
+    color: var(--text-color);
 }
 .logininput::placeholder{
     padding-left: 20px;

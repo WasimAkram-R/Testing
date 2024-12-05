@@ -5,7 +5,6 @@
 .upper{
     height: 40px;
     width: 40px;
-    color:orangered;
     background-color:var(--secondary-color);
     border-radius: 50%;
     position:absolute;
@@ -13,11 +12,10 @@
     right: 50px;
     bottom: 0;
 }
-.upper:hover{
-    color:white;
-    background-color:orangered;
-    transition: 0.4s;
-}
+
+/* .upper:hover{
+    transition: 10s;
+} */
 
 .footerform button:hover{
    
@@ -34,7 +32,7 @@ html {
   
 }
 
-.footerform .footerinput{
+/* .footerform .footerinput{
     background-color: black;
     border: 1px solid var(--primary-color);
 }
@@ -54,7 +52,7 @@ html {
 .footerinput:focus {
     outline: none !important;  
     box-shadow: none !important;
-  }
+  } */
 
 
 .icon-container {
@@ -69,7 +67,7 @@ html {
 .icon-container:hover{
     background-color: var(--primary-color);
     border: none;
-    transition: 0.5s;
+    transition: 0.5s !important;
 }
   
 

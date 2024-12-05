@@ -64,15 +64,15 @@ const SearchResults = () => {
      
       <div className='container'>
 
-      <h6 className='py-3 text-lg-start text-center text-uppercase text-white'>Results for : <span style={{color:"#c4c4c5"}}>{location}</span></h6>
+      <h6 className='py-3 text-lg-start text-center text-uppercase ' style={{color:"var(--secondary-color)"}}>Results for : <span style={{color:"var(--text-color)"}}>{location}</span></h6>
 
         {filteredContent.length === 0 ? (
-          <p className="text-lg-start text-center text-uppercase " style={{color:"#ff7b7b"}}> No tailors found for : {location}</p>
+          <p className="text-lg-start text-center text-uppercase " style={{color:"var(--primary-color)"}}> No tailors found for : {location}</p>
         ) : (
           filteredContent.map((item, index) => (
             <div className="container">
 
-            <div data-aos="fade-up" className="row  mb-3  py-1 rounded-3 align-items-center" style={{backgroundColor:"#151515",boxShadow:"0px 0px 2px gray"}} key={index} >
+            <div data-aos="fade-up" className="row  mb-3  py-1 rounded-3 align-items-center" style={{backgroundColor:"var(--secondary-bg-color)",boxShadow:"0px 0px 2px gray"}} key={index} >
 
               <div className="col-lg-2 col-md-4 d-flex justify-content-center">
                 <img src={item.img} alt={item.content} className=" img-fluid rounded searchimg" onClick={() => handleImageClick(item.content)} />
@@ -82,7 +82,7 @@ const SearchResults = () => {
 
               <div className='d-sm-flex  align-items-center  justify-content-between'>
 
-              <h4 style={{color:"#ff7b7b"}} onClick={() => handleImageClick(item.content)}><MdVerifiedUser style={{color:"#ff7b7b"}} /> {item.content}</h4>
+              <h4 style={{color:"var(--primary-color)"}} onClick={() => handleImageClick(item.content)}><MdVerifiedUser style={{color:"var(--primary-color)"}} /> {item.content}</h4>
              
               {/* <p  className='d-sm-none '> <MdFavoriteBorder size={23} style={{color:"#ff7b7b"}}/></p> */}
 
@@ -91,7 +91,7 @@ const SearchResults = () => {
                  <button className='border-0 rounded px-1' style={{backgroundColor:"green",color:"white",   display: "flex", 
                justifyContent: "center", 
                alignItems: "center"}}> {item.star} <IoMdStar/>
-               </button>          <span style={{color:"#c4c4c5"}}>{item.ratings} Ratings</span> 
+               </button>          <span style={{color:"var(--text-color)"}}>{item.ratings} Ratings</span> 
                 </div>
                
 
@@ -107,7 +107,7 @@ const SearchResults = () => {
 
 
             {/* <div> */}
-            <p  className='' style={{color:"white",fontSize:"14px"}}><CiLocationOn style={{color:"white"}}/> {item.address}
+            <p  className='' style={{color:"var(--secondary-color)",fontSize:"14px"}}><CiLocationOn style={{color:"var(--secondary-color)"}}/> {item.address}
             </p>
             {/* </div> */}
                  
@@ -118,7 +118,7 @@ const SearchResults = () => {
                           <button 
                             key={tagIndex} 
                             className="bg-transparent border-0 me-3 mb-3" 
-                            style={{ color: "#c4c4c5", fontSize: "12px",padding:"3px", boxShadow:"0px 0px 2px gray"}}>
+                            style={{ color: "var(--text-color)", fontSize: "12px",padding:"3px", boxShadow:"0px 0px 2px gray"}}>
                             {tag}
                           </button>
                         ))}
@@ -133,10 +133,11 @@ const SearchResults = () => {
   style={{
     backgroundColor: "transparent",
     border: 0,
-    boxShadow: "0px 0px 2px #ff7b7b",
+    boxShadow: "0px 0px 2px var(--primary-color)",
     fontSize: "14px",
+    color:"var(--secondary-color)"
   }}
-  className="px-2 py-1 rounded-1 text-white whatsappbutton"
+  className="px-2 py-1 rounded-1  whatsappbutton" 
 >
   <FaWhatsapp size={20} /> {item.number}
 </button>
@@ -145,11 +146,11 @@ const SearchResults = () => {
   style={{
     backgroundColor: "transparent",
     border: 0,
-    boxShadow: "0px 0px 2px #ff7b7b",
+    boxShadow: "0px 0px 2px var(--primary-color)",
     fontSize: "14px",
-    // Add margin here
+     color:"var(--secondary-color)"
   }}
-  className="px-2 py-1 rounded-1 text-white enquirybutton"
+  className="px-2 py-1 rounded-1  enquirybutton"
 >
   SEND ENQUIRY
 </button>
@@ -158,16 +159,17 @@ const SearchResults = () => {
   style={{
     backgroundColor: "transparent",
     border: 0,
-    boxShadow: "0px 0px 2px #ff7b7b",
+    boxShadow: "0px 0px 2px var(--primary-color)",
     fontSize: "14px",
+     color:"var(--secondary-color)"
   }}
-  className="px-2 py-1 rounded-1 text-white"
+  className="px-2 py-1 rounded-1 "
 >
   CONNECT
 </button>  
 </div> 
 
-<p  className=''> <MdFavoriteBorder size={23} style={{color:"#ff7b7b"}}/></p>
+<p  className=''> <MdFavoriteBorder size={23} style={{color:"var(--primary-color)"}}/></p>
   
   </div>              
                 

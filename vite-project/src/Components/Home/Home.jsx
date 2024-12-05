@@ -145,7 +145,7 @@ const Home = () => {
       justifyContent: 'center',
       alignItems: 'center',
       color: 'var(--secondary-color)',
-      zIndex: 2, // Overlay sits above the image
+      zIndex: 2,
     }}
   >
     <div className="container">
@@ -252,18 +252,18 @@ const Home = () => {
       <div className="col-lg-6 pb-3" data-aos="fade-left">
       <marquee behavior="" direction="">
                   <img src={icon1} alt="" />
-                  <IoMdArrowForward size={30}style={{color:"#c4c4c5"}}/>
+                  <IoMdArrowForward size={30}style={{color:"var(--text-color)"}}/>
                   <img src={icon2} alt="" />
-                  <IoMdArrowForward size={30}style={{color:"#c4c4c5"}}/>
+                  <IoMdArrowForward size={30}style={{color:"var(--text-color)"}}/>
                   <img src={icon3} alt="" />
-                  <IoMdArrowForward size={30}style={{color:"#c4c4c5"}}/>
+                  <IoMdArrowForward size={30}style={{color:"var(--text-color)"}}/>
                   <img src={icon4} alt="" />
         </marquee>
       </div>
      </div>
   </div>
 
-
+  
  
 
   <div className="container py-md-5" >
@@ -271,9 +271,9 @@ const Home = () => {
       <div className="col-lg-6 order-lg-first order-last" data-aos="fade-right">
       <marquee behavior="" direction="right">
                   <img src={icon5}  alt="" />
-                  <IoMdArrowForward size={30}style={{color:"#c4c4c5"}}/>
+                  <IoMdArrowForward size={30}style={{color:"var(--text-color)"}}/>
                   <img src={icon6} alt="" />
-                  <IoMdArrowForward size={30}style={{color:"#c4c4c5"}}/>
+                  <IoMdArrowForward size={30}style={{color:"var(--text-color)"}}/>
                   <img src={icon7} alt="" />
                 </marquee>
       </div>
@@ -388,8 +388,8 @@ const Home = () => {
           slidesPerView: 3,  
         },
       }}
-    >
-      <SwiperSlide className="p-4 homeswiper" style={{ backgroundColor: "#151515", borderBottom: "5px solid var(--primary-color)",borderRadius:"10px" }}>
+    > 
+      <SwiperSlide className="p-4 homeswiper" style={{ backgroundColor: "var(--secondary-bg-color)", borderBottom: "5px solid var(--primary-color)",borderRadius:"10px" }}>
         <div className="testimonial">
           <p
             className='testimonial-text displaypara '
@@ -409,7 +409,7 @@ const Home = () => {
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="p-4 homeswiper" style={{ backgroundColor: "#151515", borderBottom: "5px solid var(--primary-color)" ,borderRadius:"10px"}}>
+      <SwiperSlide className="p-4 homeswiper" style={{ backgroundColor: "var(--secondary-bg-color)", borderBottom: "5px solid var(--primary-color)" ,borderRadius:"10px"}}>
         <div className="testimonial">
           <p
             className='testimonial-text displaypara '
@@ -428,7 +428,7 @@ const Home = () => {
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="p-4 homeswiper" style={{ backgroundColor: "#151515", borderBottom: "5px solid var(--primary-color)" ,borderRadius:"10px"}}>
+      <SwiperSlide className="p-4 homeswiper" style={{ backgroundColor: "var(--secondary-bg-color)", borderBottom: "5px solid var(--primary-color)" ,borderRadius:"10px"}}>
         <div className="testimonial">
           <p
             className=' displaypara testimonial-text'
@@ -448,7 +448,7 @@ const Home = () => {
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="p-4 homeswiper" style={{ backgroundColor: "#151515", borderBottom: "5px solid var(--primary-color)",borderRadius:"10px" }}>
+      <SwiperSlide className="p-4 homeswiper" style={{ backgroundColor: "var(--secondary-bg-color)", borderBottom: "5px solid var(--primary-color)",borderRadius:"10px" }}>
         <div className="testimonial">
           <p
             className='testimonial-text displaypara '

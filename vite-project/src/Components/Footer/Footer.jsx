@@ -66,7 +66,7 @@ const Footer = () => {
         });
       }}/> */}
       <div className='icon-container upper'>
-        <FaArrowUp  style={{ width: "24px", height: "24px", color: "white" }}className="uppe"
+        <FaArrowUp  style={{ width: "24px", height: "24px", color: "var(--secondary-color)" }}className=""
       onClick={() => {
        
         window.scrollTo({

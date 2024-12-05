@@ -100,7 +100,7 @@ const ResponsiveNavbar = () => {
 
             <Nav.Link>
             <Link to="/login"className='text-decoration-none   text-uppercase'style={{color:"var(--secondary-color)"}} >
-            <div className='d-flex align-items-cente pb-3'>
+            <div className='d-flex  pb-3'>
             <div className='a d-flex align-items-center'>
             <span className=' text-uppercase'style={{color:"var(--secondary-color)"}} >Login</span>
             <span className=''><IoLogInOutline className='' style={{width:"30px",height:"30px",color:"var(--secondary-color)"}} /></span>
