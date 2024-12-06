@@ -338,8 +338,8 @@ const Testimonials = ({ testimonials }) => {
               style={{
                 backgroundColor: 'var(--secondary-bg-color)',
                 borderBottom: '5px solid var(--primary-color)',
-                padding: '20px', // Ensures padding is there for mobile/desktop responsiveness
-                display: 'flex', // Centers the content vertically and horizontally
+                padding: '20px', 
+                display: 'flex',
                 flexDirection: 'column', 
                 justifyContent: 'center', 
               }}
@@ -349,7 +349,7 @@ const Testimonials = ({ testimonials }) => {
                   <div className="col">
                     <div className="d-flex align-items-center column-gap-4">
                       <img src="https://placehold.co/60" className='rounded-circle' alt="" />
-                     <h5 className="testimonial-name " style={{color:"var(--secondary-color)"}}>{testimonial.author}</h5>
+                     <h5 className="testimonial-name " style={{color:"white"}}>{testimonial.author}</h5>
                     </div>
                   </div>
                     <h5 className="pt-3" style={{color:"var(--primary-color)"}} ><CiStar /><CiStar /><CiStar /><CiStar /><CiStar /></h5>

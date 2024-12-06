@@ -42,6 +42,10 @@ const DarkMode = () => {
 const toggleTheme=(e)=>{
     if (e.target.checked) setLightMode();
     else setDarkMode()
+  
+    // if (e.target.checked) setDarkMode();
+    // else setLightMode()
+
 }
 
     return (
@@ -59,6 +63,6 @@ const toggleTheme=(e)=>{
         </div>
     );
 };
-
+ 
 export default DarkMode;
 

@@ -104,7 +104,7 @@ const Partners = () => {
 
 <SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "var(--secondary-bg-color)", borderTop: "5px solid var(--primary-color)" }}>
           <div className="testimonial">
-          <h6 className=' displaypara' style={{color:"var(--secondary-color)"}}>1. Partner with Us</h6>
+          <h6 className=' displaypara' style={{color:"white"}}>1. Partner with Us</h6>
             <p className="displaypara" style={{color:" var(--text-color)"}}>
             Join our platform to showcase your tailoring skills to a wider audience.
             </p>
@@ -114,7 +114,7 @@ const Partners = () => {
 
         <SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "var(--secondary-bg-color)", borderTop: "5px solid var(--primary-color)" }}>
           <div className="testimonial ">
-          <h6  className=' displaypara' style={{color:"var(--secondary-color)"}}>2. Customers Finds You</h6>
+          <h6  className=' displaypara' style={{color:"white"}}>2. Customers Finds You</h6>
             <p style={{color:" var(--text-color)"}}className=" displaypara">
             Customers easily find tailors based on  their needs.
             </p>
@@ -124,7 +124,7 @@ const Partners = () => {
 
         <SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "var(--secondary-bg-color)", borderTop: "5px solid var(--primary-color)" }}>
           <div className="testimonial">
-          <h6 className=' displaypara' style={{color:"var(--secondary-color)"}}>3. Expand Your Business</h6>
+          <h6 className=' displaypara' style={{color:"white"}}>3. Expand Your Business</h6>
             <p className=" displaypara" style={{color:" var(--text-color)"}}>
             Get access to more customers and grow your tailoring business seamlessly.
             </p>
@@ -136,7 +136,7 @@ const Partners = () => {
          
         <SwiperSlide className=' p-4 partnerswiper' style={{ backgroundColor: "var(--secondary-bg-color)", borderTop: "5px solid var(--primary-color)" }}>
           <div className="testimonial">
-          <h6 className=' displaypara' style={{color:"var(--secondary-color)"}}>4. Boost Your Earnings</h6>
+          <h6 className=' displaypara' style={{color:"white"}}>4. Boost Your Earnings</h6>
             <p className=" displaypara" style={{color:" var(--text-color)"}}>
              Earn more by partnering with us and tapping into our vast network of clients.
             </p>

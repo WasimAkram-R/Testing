@@ -14,7 +14,7 @@ import AOS from 'aos';
 const SearchResults = () => {
   const { location } = useParams();  // Get location from the URL
   const [filteredContent, setFilteredContent] = useState([]);
-  const navigate = useNavigate();  // Hook for navigation
+  const navigate = useNavigate();  
 
 
 
@@ -84,30 +84,25 @@ const SearchResults = () => {
 
               <h4 style={{color:"var(--primary-color)"}} onClick={() => handleImageClick(item.content)}><MdVerifiedUser style={{color:"var(--primary-color)"}} /> {item.content}</h4>
              
-              {/* <p  className='d-sm-none '> <MdFavoriteBorder size={23} style={{color:"#ff7b7b"}}/></p> */}
+             
 
 
               <div className='d-flex column-gap-2  pb-2'>
                  <button className='border-0 rounded px-1' style={{backgroundColor:"green",color:"white",   display: "flex", 
                justifyContent: "center", 
                alignItems: "center"}}> {item.star} <IoMdStar/>
-               </button>          <span style={{color:"var(--text-color)"}}>{item.ratings} Ratings</span> 
+               </button>          <span style={{color:"#c4c4c5"}}>{item.ratings} Ratings</span> 
                 </div>
                
 
               </div>
 
    
-                {/* <div className='d-flex column-gap-2  pb-2'>
-                 <button className='border-0 rounded px-1' style={{backgroundColor:"green",color:"white",   display: "flex", 
-               justifyContent: "center", 
-               alignItems: "center"}}> {item.star} <IoMdStar/>
-               </button>          <span style={{color:"#c4c4c5"}}>{item.ratings} Ratings</span> 
-                </div> */}
+         
 
 
             {/* <div> */}
-            <p  className='' style={{color:"var(--secondary-color)",fontSize:"14px"}}><CiLocationOn style={{color:"var(--secondary-color)"}}/> {item.address}
+            <p  className='' style={{color:"white",fontSize:"14px"}}><CiLocationOn style={{color:"white"}}/> {item.address}
             </p>
             {/* </div> */}
                  
@@ -118,7 +113,7 @@ const SearchResults = () => {
                           <button 
                             key={tagIndex} 
                             className="bg-transparent border-0 me-3 mb-3" 
-                            style={{ color: "var(--text-color)", fontSize: "12px",padding:"3px", boxShadow:"0px 0px 2px gray"}}>
+                            style={{ color: "#c4c4c5", fontSize: "12px",padding:"3px", boxShadow:"0px 0px 2px #c4c4c5"}}>
                             {tag}
                           </button>
                         ))}
@@ -135,7 +130,7 @@ const SearchResults = () => {
     border: 0,
     boxShadow: "0px 0px 2px var(--primary-color)",
     fontSize: "14px",
-    color:"var(--secondary-color)"
+    color:"white"
   }}
   className="px-2 py-1 rounded-1  whatsappbutton" 
 >
@@ -148,7 +143,7 @@ const SearchResults = () => {
     border: 0,
     boxShadow: "0px 0px 2px var(--primary-color)",
     fontSize: "14px",
-     color:"var(--secondary-color)"
+     color:"white"
   }}
   className="px-2 py-1 rounded-1  enquirybutton"
 >
@@ -161,7 +156,7 @@ const SearchResults = () => {
     border: 0,
     boxShadow: "0px 0px 2px var(--primary-color)",
     fontSize: "14px",
-     color:"var(--secondary-color)"
+     color:"white"
   }}
   className="px-2 py-1 rounded-1 "
 >

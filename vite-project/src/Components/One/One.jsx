@@ -14,7 +14,6 @@ const One = () => {
   const [tailorData, setTailorData] = useState(null);
 
   useEffect(() => {
-    // Simulated tailor data with more detailed content
     const allTailors = [
       {
         name: 'Peter England',

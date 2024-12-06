@@ -1,4 +1,4 @@
-import React,{ useState,useEffect } from 'react';
+import React,{ useEffect } from 'react';
 import image1 from './Tailor_Image1.jpg';
 import image2 from './Tailor_Image2.jpg';
 import image3 from './Tailor_Image3.jpg';
@@ -6,7 +6,7 @@ import AOS from 'aos';
 
 
 const Gallery = ({ tailorName }) => {
-  // Gallery images categorized by type
+  
   const galleryImages = {
  
         'Peter England': {

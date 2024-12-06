@@ -13,10 +13,6 @@
     bottom: 0;
 }
 
-/* .upper:hover{
-    transition: 10s;
-} */
-
 .footerform button:hover{
    
     filter: brightness(80%);

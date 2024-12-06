@@ -1,7 +1,6 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos';
 import './AboutUs.css'
-// import aboutus from './AboutUs.png'
 import aboutus1 from './AboutUs1.jpg'
 const AboutUs = () => {
 

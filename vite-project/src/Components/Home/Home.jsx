@@ -1,28 +1,12 @@
-
-
-
-
-
-
-
-
-
 import React, { useEffect, useState } from 'react';
-import { Button } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';  // To navigate programmatically
+import { useNavigate } from 'react-router-dom'; 
 import './Home.css'
 import { IoMdArrowForward } from "react-icons/io";
-// import Tailoring from './Tailoring.mp4';
 import Tailoringgif from './Tailor2.gif';
 import Heroimage1 from './HeroImages/Hero_Image1.jpg';
 import Heroimage2 from './HeroImages/Hero_Image2.jpg';
 import Heroimage3 from './HeroImages/Hero_Image3.jpg';
 import Heroimage4 from './HeroImages/Hero_Image4.jpg';
-import Heroimage5 from './HeroImages/Hero_Image5.jpg';
-import Heroimage6 from './HeroImages/Hero_Image6.jpg';
-import Heroimage7 from './HeroImages/Hero_Image7.png';
-import Heroimage8 from './HeroImages/Hero_Image8.png';
-import Heroimage9 from './HeroImages/Hero_Image9.png';
 import aboutus from './HeroImages/AboutUs.png'
 import icon1 from './HeroImages/icon1.png';
 import icon2 from './HeroImages/icon2.png';
@@ -41,11 +25,9 @@ import { TbBusinessplan } from "react-icons/tb";
 
 import AOS from 'aos';
 
-import Carousel from 'react-bootstrap/Carousel';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// import {  Pagination } from 'swiper';
 import 'swiper/css'; 
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -59,16 +41,16 @@ import { BiSupport } from "react-icons/bi";
 import { FaRegThumbsUp } from "react-icons/fa";
 
 const Home = () => {
-  const [location, setLocation] = useState('');  // State to hold location input
-  const navigate = useNavigate();  // Hook to programmatically navigate
+  const [location, setLocation] = useState('');  
+  const navigate = useNavigate(); 
 
   const handleLocationChange = (e) => {
-    setLocation(e.target.value);  // Update location state on input change
+    setLocation(e.target.value); 
   };
 
   const handleSearch = () => {
     if (location) {
-      // Navigate to another page/component and pass location as a URL parameter
+      
       navigate(`/search/${location}`);
     }
   };
@@ -81,32 +63,6 @@ const Home = () => {
   },[]);
 
 
-//swiper
-
-
-  // const [showMore1, setShowMore1] = useState(false);
-  // const [showMore2, setShowMore2] = useState(false);
-  // const [showMore3, setShowMore3] = useState(false);
-  // const [showMore4, setShowMore4] = useState(false);
-
-  // const handleShowMore = (index) => {
-  //   switch (index) {
-  //     case 1:
-  //       setShowMore1(!showMore1);
-  //       break;
-  //     case 2:
-  //       setShowMore2(!showMore2);
-  //       break;
-  //     case 3:
-  //       setShowMore3(!showMore3);
-  //       break;
-  //     case 4:
-  //       setShowMore4(!showMore4);
-  //       break;
-  //     default:
-  //       break;
-  //   }
-  // };
 
 
 
@@ -127,8 +83,8 @@ const Home = () => {
     style={{
       width: '100%',
       height: 'auto',
-      position: 'relative', // Image stays as background
-      zIndex: 1, // Ensure the image is in the background
+      position: 'relative', 
+      zIndex: 1, 
     }} 
   />
 
@@ -158,14 +114,14 @@ const Home = () => {
           onChange={handleLocationChange} 
         />
         <button 
-          onClick={handleSearch}  // Trigger search and navigate
+          onClick={handleSearch}  
           className=" px-sm-4 py-sm-2 px-3 py-1 rounded-5  fw-light  text-uppercase border-0" style={{backgroundColor:"var(--primary-color)", color: 'var(--secondary-color)'}}
         >
           Search
         </button>
       </div>
       <h1 className="tailorsh1 py-md-4 py-3"style={{color:'var(--primary-color)'}}>Tailors Connect</h1>
-      <p className="tailorsp">
+      <p className="tailorsp text-white">
         Connecting skilled tailors with customers who value quality, style, and convenience.
       </p>
     </div>
@@ -401,7 +357,7 @@ const Home = () => {
           </p>
           <div className="row align-items-end">
             <div className="col">
-              <h4 className=" " style={{color:"var(--secondary-color)"}}>Customer 1</h4>
+              <h4 className=" " style={{color:"white"}}>Customer 1</h4>
               <h6 className="" style={{ color: "var(--primary-color)" }}>client</h6>
             </div>
           </div>
@@ -421,7 +377,7 @@ const Home = () => {
           </p>
           <div className="row align-items-end">
             <div className="col">
-              <h4 className=" "style={{color:"var(--secondary-color)"}}>Customer 2</h4>
+              <h4 className=" "style={{color:"white"}}>Customer 2</h4>
               <h6 className="" style={{ color: "var(--primary-color)" }}>client</h6>
             </div>
           </div>
@@ -440,7 +396,7 @@ const Home = () => {
           </p>
           <div className="row align-items-end">
             <div className="col">
-              <h4 className=""style={{color:"var(--secondary-color)"}}>Customer 3</h4>
+              <h4 className=""style={{color:"white"}}>Customer 3</h4>
               <h6 className="" style={{ color: "var(--primary-color)" }}>client</h6>
             </div>
           </div>
@@ -460,7 +416,7 @@ const Home = () => {
           </p>
           <div className="row align-items-end">
             <div className="col">
-              <h4 className=""style={{color:"var(--secondary-color)"}}>Customer 4</h4>
+              <h4 className=""style={{color:"white"}}>Customer 4</h4>
               <h6 className="" style={{ color: "var(--primary-color)" }}>client</h6>
             </div>
           </div>

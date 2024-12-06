@@ -1,14 +1,9 @@
 import React from 'react'
 import './Login.css'
-
 import { LiaUserLockSolid } from "react-icons/lia";
 import { FaRegUser } from "react-icons/fa";
 import { IoKeyOutline } from "react-icons/io5";
 import { IoIosArrowRoundForward } from "react-icons/io";
-
-
-//  import { GoLock } from "react-icons/go";
-//  import { AiOutlineMail } from "react-icons/ai";
 
 const Login = () => {
   
@@ -28,13 +23,13 @@ const Login = () => {
            <div className='d-flex'>
                
                <div className='d-flex align-items-center'>
-               <LiaUserLockSolid className='me-4' style={{width:"30px",height:"30px",color:"var(--secondary-color)" }}/>
+               <LiaUserLockSolid className='me-4' style={{width:"30px",height:"30px",color:"white" }}/>
                </div>
                  
                <div>
                <h6 className='fs-5' style={{color:"var(--primary-color)"}} >Login Here</h6>
                
-               <p style={{fontSize:"13px",color:"var(--secondary-color)"}}>Your personal data will be used to support your experience throughout this website, to manage access to your account.
+               <p style={{fontSize:"13px"}} className='text-white-50'>Your personal data will be used to support your experience throughout this website, to manage access to your account.
 
                </p>
                </div>
@@ -43,7 +38,7 @@ const Login = () => {
 
            <div className='input-container mb-3'>  <FaRegUser className='icon' />
               <input type="text" className=' p-3 logininput  form-control formsinput'
-              placeholder='Username / email address' required />
+              placeholder='Number / Email Address' required />
            </div>
 
            <div className='input-container'>
@@ -55,7 +50,7 @@ const Login = () => {
              
 
            <div className='my-3'>
-              <p style={{color:"var(--secondary-color)"}}>Forget Password?</p>
+              <p style={{color:"white"}}>Forget Password?</p>
            </div>
 
            <div>

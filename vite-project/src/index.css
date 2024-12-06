@@ -28,10 +28,18 @@
 
 
 
-html, body {
+/* html, body {
   overflow-x: hidden;
   overflow-y: auto;
-}
+} */
+
+ /* html {
+  overflow-x: hidden;
+  overflow-y: auto;
+} */
+
+
+
 img {
   max-width: 100%;
   height: auto;
@@ -47,19 +55,19 @@ img {
 
 
 .formsform .formsinput{
-  background-color: var(--secondary-bg-color);
-  border: 1px solid gray;
+  background-color: #151515;
+  border: 1px solid var(--primary-color);
 }
 .formsform .formsinput:focus{
   background-color: black;
-  color: var(--secondary-color);
-  border: 1px solid gray;
+  color: white;
+  border: 1px solid var(--secondary-color);
 }
 .formsform .formsinput::placeholder{
-  color:var(--text-color);
+  color:#c4c4c5;
 }
 .formsform .formsinput{
-  color: var(--secondary-color);
+  color: white;
 }
 
 

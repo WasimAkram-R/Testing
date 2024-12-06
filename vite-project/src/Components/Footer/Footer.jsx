@@ -19,35 +19,27 @@ const Footer = () => {
 
       {/* Facebook Icon with Square Border */}
       <div className='icon-container'>
-        < FaFacebookF style={{ width: "24px", height: "24px", color: "var(--secondary-color)" }} />
+        < FaFacebookF style={{ width: "24px", height: "24px", color: "white" }} />
       </div>  
 
       {/* WhatsApp Icon with Square Border */}
       <div className='icon-container'>
-        <IoLogoWhatsapp style={{ width: "24px", height: "24px", color: "var(--secondary-color)" }} />
+        <IoLogoWhatsapp style={{ width: "24px", height: "24px", color: "white" }} />
       </div>
     </div>
      
       <div className=''>
-      <p className='pt-3 '  style={{fontSize:"14px",color: "var(--secondary-color)" }}>Copyright @ 2024 <span className='fw-medium'>TailorsHub.</span> All rights reserved.</p>
+      <p className='pt-3 '  style={{fontSize:"14px",color: "white" }}>Copyright @ 2024 <span className='fw-medium'>TailorsHub.</span> All rights reserved.</p>
          <button  onClick={() => navigate('/terms')} className='bg-transparent border-0 text-decoration-underline' style={{fontSize:"14px",color:"var(--text-color"}}>Terms And Conditions</button><br />
          <button  onClick={() => navigate('/policy')} className='bg-transparent border-0 text-decoration-underline' style={{fontSize:"14px",color:"var(--text-color"}}>Privacy And Policy</button>
          </div>
       </div>
 
          <div className="col-md-6 ">
-            {/* <form action="" className='footerform'>
-              <div>
-              <input type="tel" placeholder='Enter Your Number'className='w-75  form-control footerinput'/>
-              </div>
-               <div>
-               <input type="email" placeholder='Enter your Email'className='w-75 my-3  form-control footerinput'/>
-               <button type="submit" className='px-4 py-2 rounded-1 border-0 text-uppercase' style={{backgroundColor:"#ff7b7b",color:"white"}}>Submit</button>
-               </div>
-            </form> */}
-            <h6 className=''style={{color:"var(--secondary-color"}}>EMAIL : <span style={{color:"var(--text-color"}}>abc@gmail.com</span></h6>
-            <h6 className=' py-1'style={{color:"var(--secondary-color"}}>NUMBER : <span style={{color:"var(--text-color"}}>XXXXXXXXXX</span></h6>
-            <h6 className=''style={{color:"var(--secondary-color"}}>ADDRESS : <span style={{color:"var(--text-color"}}>Silaiman,Madurai</span></h6>
+       
+            <h6 className=''style={{color:"white"}}>EMAIL : <span style={{color:"var(--text-color"}}>abc@gmail.com</span></h6>
+            <h6 className=' py-1'style={{color:"white"}}>NUMBER : <span style={{color:"var(--text-color"}}>XXXXXXXXXX</span></h6>
+            <h6 className=''style={{color:"white"}}>ADDRESS : <span style={{color:"var(--text-color"}}>Silaiman,Madurai</span></h6>
          </div>
 
        </div>
@@ -57,16 +49,8 @@ const Footer = () => {
 
 
 
-    {/* <FiArrowUpCircle  className="upper"
-      onClick={() => {
-       
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      }}/> */}
       <div className='icon-container upper'>
-        <FaArrowUp  style={{ width: "24px", height: "24px", color: "var(--secondary-color)" }}className=""
+        <FaArrowUp  style={{ width: "24px", height: "24px", color: "white" }}className=""
       onClick={() => {
        
         window.scrollTo({
